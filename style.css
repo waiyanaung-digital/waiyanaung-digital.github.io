@@ -10,33 +10,29 @@ html{
 
 body{
     font-family:Arial, sans-serif;
-    background:#f8f9fa;
+    background:#f5f5f5;
     color:#111;
 }
 
 header{
+    background:white;
+    border-bottom:1px solid #ddd;
     position:sticky;
     top:0;
     z-index:1000;
-    background:#f8f9fa;
-    padding:20px 50px;
-    border-bottom:1px solid #eee;
 }
 
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-}
-
-nav h2{
-    font-size:28px;
+    padding:25px 60px;
 }
 
 nav ul{
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:35px;
 }
 
 nav a{
@@ -46,106 +42,86 @@ nav a{
 }
 
 nav a:hover{
-    color:#008f4c;
+    color:#009245;
 }
 
 .hero{
-    min-height:90vh;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:80px 30px;
+    padding:60px 20px;
 }
 
 .hero h1{
-    font-size:72px;
-    line-height:1.1;
+    font-size:90px;
+    font-weight:700;
 }
 
 .hero h2{
-    margin-top:18px;
-    color:#008f4c;
-    font-size:30px;
+    color:#009245;
+    margin-top:20px;
+    font-size:38px;
 }
 
 .hero p{
     margin-top:25px;
-    max-width:720px;
-    line-height:1.7;
-    font-size:20px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:15px;
-    margin-top:35px;
-    flex-wrap:wrap;
-    justify-content:center;
+    max-width:700px;
+    line-height:1.6;
+    font-size:22px;
 }
 
 .btn{
+    margin-top:35px;
     display:inline-block;
-    background:#008f4c;
+    background:#009245;
     color:white;
-    padding:16px 34px;
-    border-radius:10px;
     text-decoration:none;
-    font-size:18px;
+    padding:18px 40px;
+    border-radius:12px;
+    font-size:20px;
     font-weight:bold;
 }
 
 .btn:hover{
-    background:#006f3b;
-}
-
-.secondary-btn{
-    background:white;
-    color:#008f4c;
-    border:1px solid #008f4c;
-}
-
-.secondary-btn:hover{
-    background:#e9f7ef;
-    color:#008f4c;
+    background:#007a39;
 }
 
 .stats{
+    margin-top:70px;
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:22px;
-    margin-top:70px;
-    max-width:1050px;
+    gap:25px;
+    max-width:1200px;
     width:100%;
 }
 
 .card{
     background:white;
-    padding:32px 24px;
-    border-radius:18px;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-    text-align:center;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .card h3{
-    color:#008f4c;
-    font-size:38px;
-    margin-bottom:12px;
+    color:#009245;
+    font-size:48px;
 }
 
 .card p{
-    color:#555;
-    font-size:17px;
+    margin-top:15px;
+    color:#666;
 }
 
 .about,
 .skills,
 .projects,
 .contact{
-    max-width:1100px;
-    margin:120px auto;
-    padding:0 30px;
+    max-width:1200px;
+    margin:auto;
+    padding:120px 30px;
     text-align:center;
 }
 
@@ -153,82 +129,71 @@ nav a:hover{
 .skills h2,
 .projects h2,
 .contact h2{
-    font-size:44px;
-    margin-bottom:30px;
+    font-size:64px;
+    margin-bottom:40px;
 }
 
 .about p,
-.projects p,
 .contact p{
-    font-size:20px;
+    max-width:900px;
+    margin:20px auto;
+    font-size:22px;
     line-height:1.8;
     color:#555;
-    margin-bottom:20px;
 }
 
 .skills-grid{
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
+    flex-wrap:wrap;
     gap:15px;
-    margin-top:40px;
 }
 
 .skill-card{
     background:white;
-    padding:15px 25px;
-    border-radius:50px;
+    padding:18px 25px;
+    border-radius:40px;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
-    font-weight:600;
+    font-weight:bold;
 }
 
 .project-card{
     background:white;
-    padding:45px;
-    border-radius:20px;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
     text-align:left;
-    margin-top:30px;
 }
 
 .project-card h3{
-    font-size:34px;
-    color:#008f4c;
+    color:#009245;
+    font-size:40px;
     margin-bottom:20px;
 }
 
-.project-tags{
-    margin-top:30px;
-}
-
-.project-tags span{
-    display:inline-block;
-    background:#008f4c;
-    color:white;
-    padding:10px 18px;
-    border-radius:30px;
-    margin:5px;
-    font-size:14px;
+.project-card p{
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
 }
 
 .project-stats{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:20px;
-    margin-top:35px;
+    margin-top:40px;
 }
 
 .project-stats div{
-    background:#f8f9fa;
+    background:#f5f5f5;
     padding:25px;
-    border-radius:14px;
+    border-radius:15px;
     text-align:center;
 }
 
 .project-stats h4{
-    color:#008f4c;
-    font-size:28px;
-    margin-bottom:10px;
+    color:#009245;
+    font-size:38px;
 }
 
 .project-stats span{
@@ -236,78 +201,46 @@ nav a:hover{
 }
 
 .contact a{
-    color:#008f4c;
+    color:#009245;
     text-decoration:none;
-    font-weight:600;
-}
-
-.contact a:hover{
-    text-decoration:underline;
+    font-weight:bold;
 }
 
 footer{
-    text-align:center;
-    padding:30px;
     background:white;
-    color:#555;
-    border-top:1px solid #eee;
+    padding:30px;
+    text-align:center;
+    border-top:1px solid #ddd;
 }
 
-@media(max-width:900px){
-    .stats{
-        grid-template-columns:repeat(2,1fr);
-    }
+@media(max-width:768px){
 
-    .project-stats{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero h1{
-        font-size:54px;
-    }
+.hero h1{
+    font-size:55px;
 }
 
-@media(max-width:600px){
-    header{
-        padding:18px 25px;
-    }
+.hero h2{
+    font-size:28px;
+}
 
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
+.stats{
+    grid-template-columns:1fr;
+}
 
-    nav ul{
-        gap:18px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+.project-stats{
+    grid-template-columns:1fr;
+}
 
-    .hero h1{
-        font-size:42px;
-    }
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2{
+    font-size:40px;
+}
 
-    .hero h2{
-        font-size:24px;
-    }
+nav{
+    flex-direction:column;
+    gap:20px;
+}
 
-    .hero p{
-        font-size:18px;
-    }
-
-    .stats,
-    .project-stats{
-        grid-template-columns:1fr;
-    }
-
-    .about h2,
-    .skills h2,
-    .projects h2,
-    .contact h2{
-        font-size:34px;
-    }
-
-    .project-card{
-        padding:30px;
-    }
 }
