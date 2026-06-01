@@ -116,3 +116,21 @@ nav a{
         grid-template-columns:1fr;
     }
 }
+.about{
+    max-width:900px;
+    margin:100px auto;
+    text-align:center;
+    padding:0 30px;
+}
+
+.about h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:20px;
+}
