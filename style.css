@@ -257,3 +257,12 @@ nav a:hover{
         grid-template-columns:1fr;
     }
 }
+.contact a{
+    color:#009245;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
