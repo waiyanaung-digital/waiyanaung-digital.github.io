@@ -284,13 +284,23 @@ footer{
     gap: 60px;
     flex-wrap: wrap;
 }
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
 
-.profile-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
     object-fit: cover;
-    border: 5px solid #ffffff;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
 }
