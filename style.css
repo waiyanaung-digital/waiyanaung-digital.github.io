@@ -672,3 +672,82 @@ footer p{
         font-size:18px;
     }
 }
+/* CERTIFICATIONS SECTION */
+
+.certifications{
+    max-width:1200px;
+    margin:auto;
+    padding:120px 40px;
+}
+
+.certifications h2{
+    text-align:center;
+    font-size:72px;
+    margin-bottom:60px;
+    color:#111;
+}
+
+.certification-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.certification-card{
+    background:#ffffff;
+    padding:40px;
+    border-radius:24px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.certification-card h3{
+    color:#059669;
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.certification-card p{
+    color:#333;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.certification-card span{
+    color:#555;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* MOBILE CERTIFICATIONS */
+
+@media(max-width:768px){
+
+    .certifications{
+        padding:80px 25px;
+    }
+
+    .certifications h2{
+        font-size:42px;
+    }
+
+    .certification-grid{
+        grid-template-columns:1fr;
+    }
+
+    .certification-card{
+        padding:28px;
+    }
+
+    .certification-card h3{
+        font-size:24px;
+    }
+
+    .certification-card p{
+        font-size:18px;
+    }
+
+    .certification-card span{
+        font-size:16px;
+    }
+}
