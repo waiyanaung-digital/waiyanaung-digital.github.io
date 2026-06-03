@@ -768,3 +768,34 @@ footer p{
     font-size:15px;
     font-weight:700;
 }
+/* SPECIALTIES MOBILE ALIGNMENT FIX */
+
+@media(max-width:768px){
+
+    .specialties{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:14px;
+        max-width:360px;
+        margin:25px auto 35px;
+    }
+
+    .specialties span{
+        width:100%;
+        text-align:center;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:48px;
+        font-size:14px;
+        padding:10px 14px;
+    }
+}
+
+@media(max-width:420px){
+
+    .specialties{
+        max-width:330px;
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
