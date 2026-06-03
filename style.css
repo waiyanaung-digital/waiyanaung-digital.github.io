@@ -417,3 +417,21 @@ footer p{
     background: #059669;
     color: white;
 }
+.project-card{
+    margin-bottom:35px;
+}
+
+.project-tags{
+    margin-top:30px;
+}
+
+.project-tags span{
+    display:inline-block;
+    background:#059669;
+    color:white;
+    padding:10px 18px;
+    border-radius:999px;
+    margin:6px;
+    font-size:16px;
+    font-weight:600;
+}
