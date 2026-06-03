@@ -440,58 +440,36 @@ footer p{
 .experience{
     max-width:1200px;
     margin:auto;
-    padding:120px 40px;
+    padding:100px 40px;
 }
 
 .experience h2{
     text-align:center;
-    font-size:72px;
+    font-size:64px;
     margin-bottom:60px;
 }
 
 .experience-card{
-    background:white;
-    padding:40px;
+    background:#ffffff;
+    padding:35px;
     border-radius:20px;
     margin-bottom:25px;
-
-    box-shadow:
-    0 8px 25px rgba(0,0,0,0.05);
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
 .experience-card h3{
     color:#059669;
-    font-size:32px;
+    font-size:30px;
     margin-bottom:10px;
 }
 
 .experience-card h4{
-    color:#666;
-    font-size:20px;
+    color:#555;
+    font-size:18px;
     margin-bottom:15px;
 }
 
 .experience-card p{
-    font-size:18px;
     color:#555;
     line-height:1.8;
-}
-
-@media(max-width:768px){
-
-    .experience h2{
-        font-size:48px;
-    }
-
-    .experience-card{
-        padding:25px;
-    }
-
-    .experience-card h3{
-        font-size:24px;
-    }
-
-    .experience-card h4{
-        font-size:18px;
-    }
 }
