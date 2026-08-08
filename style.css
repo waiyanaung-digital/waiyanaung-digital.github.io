@@ -838,16 +838,13 @@ footer p{
     line-height: 1.7;
     color: #555;
 }
-/* =====================================================
-   SOCIAL MEDIA MANAGEMENT PORTFOLIO SECTION
-===================================================== */
+/* =========================
+   SOCIAL MEDIA MANAGEMENT
+========================= */
 
 .social-media-project {
     padding: 40px;
 }
-
-
-/* SMALL CATEGORY TITLE */
 
 .project-category {
     font-size: 13px;
@@ -858,308 +855,126 @@ footer p{
     margin-bottom: 10px;
 }
 
-
-/* MAIN TITLE */
-
 .social-media-project > h3 {
     font-size: 30px;
     margin-bottom: 15px;
 }
-
-
-/* INTRO PARAGRAPHS */
 
 .social-media-project > p {
     line-height: 1.8;
     margin-bottom: 16px;
 }
 
-
-/* =====================================================
-   TWO BRAND LAYOUT
-===================================================== */
-
 .brand-social-grid {
-
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
-
     margin-top: 35px;
-
 }
-
-
-/* INDIVIDUAL BRAND CARD */
 
 .brand-social-card {
-
     background: #ffffff;
-
     border: 1px solid #e7e7e7;
-
     border-radius: 18px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.06);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
 }
-
-
-/* HOVER */
 
 .brand-social-card:hover {
-
     transform: translateY(-4px);
-
-    box-shadow:
-        0 18px 45px rgba(0, 0, 0, 0.09);
-
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.09);
 }
-
-
-/* =====================================================
-   INSTAGRAM SCREENSHOT
-===================================================== */
-
-.brand-social-image {
-
-    width: 100%;
-
-    overflow: hidden;
-
-    background: #f5f5f5;
-
-}
-
-
-.brand-social-image img {
-
-    width: 100%;
-
-    height: 380px;
-
-    object-fit: cover;
-
-    object-position: top;
-
-    display: block;
-
-}
-
-
-/* =====================================================
-   BRAND CONTENT
-===================================================== */
 
 .brand-social-content {
-
-    padding: 28px;
-
+    padding: 30px;
 }
-
 
 .brand-social-content h4 {
-
     font-size: 24px;
-
     margin-top: 0;
-
     margin-bottom: 6px;
-
 }
-
 
 .brand-type {
-
     display: inline-block;
-
     font-size: 13px;
-
     font-weight: 600;
-
     opacity: 0.6;
-
     margin-bottom: 18px;
-
 }
-
 
 .brand-social-content > p {
-
     line-height: 1.7;
-
     margin-bottom: 24px;
-
 }
-
-
-/* =====================================================
-   RESPONSIBILITIES
-===================================================== */
 
 .social-responsibilities {
-
     display: grid;
-
     gap: 13px;
-
     margin-bottom: 25px;
-
 }
-
 
 .social-responsibilities div {
-
     padding: 14px 16px;
-
     border: 1px solid #eeeeee;
-
     border-radius: 10px;
-
-    background: #ffffff;
-
 }
-
 
 .social-responsibilities strong {
-
     display: block;
-
     margin-bottom: 5px;
-
     font-size: 14px;
-
 }
-
 
 .social-responsibilities span {
-
     display: block;
-
     font-size: 13px;
-
     line-height: 1.55;
-
     opacity: 0.75;
-
 }
-
-
-/* =====================================================
-   PROJECT TAGS
-===================================================== */
 
 .brand-social-content .project-tags {
-
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 8px;
-
     margin-top: 20px;
-
 }
-
-
-/* =====================================================
-   INSTAGRAM BUTTON
-===================================================== */
 
 .brand-social-content .project-links {
-
     margin-top: 25px;
-
 }
-
 
 .brand-social-content .project-links a {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
 }
-
-
-/* =====================================================
-   TABLET RESPONSIVE
-===================================================== */
 
 @media (max-width: 900px) {
 
     .brand-social-grid {
-
         grid-template-columns: 1fr;
-
-    }
-
-
-    .brand-social-image img {
-
-        height: auto;
-
-        max-height: 600px;
-
-        object-fit: cover;
-
-        object-position: top;
-
     }
 
 }
 
-
-/* =====================================================
-   MOBILE RESPONSIVE
-===================================================== */
-
 @media (max-width: 600px) {
 
     .social-media-project {
-
         padding: 24px;
-
     }
-
 
     .social-media-project > h3 {
-
         font-size: 24px;
-
     }
-
 
     .brand-social-content {
-
         padding: 22px;
-
     }
-
 
     .brand-social-content h4 {
-
         font-size: 21px;
-
-    }
-
-
-    .brand-social-image img {
-
-        height: auto;
-
     }
 
 }
