@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creative Work | Wai Yan Aung</title>
+
+    <meta name="description"
+          content="Creative portfolio of Wai Yan Aung featuring photography and graphic design work across portrait, food, beauty, branding and social media content.">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        :root {
+            --green: #009b72;
+            --green-dark: #007f5f;
+            --green-light: #eaf8f3;
+            --light-bg: #f7f7f7;
+            --border: #e4e4e4;
+            --muted: #666;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1200px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.96);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            max-width: 1400px;
+            min-height: 85px;
+
+            margin: 0 auto;
+
+            padding: 0 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav h2 {
+            font-size: 23px;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--green);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .creative-hero {
+            padding: 110px 0 95px;
+
+            background:
+            radial-gradient(circle at 85% 20%, #e9f8f2 0%, transparent 30%),
+            #f7f7f7;
+        }
+
+        .creative-hero-content {
+            max-width: 850px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            color: var(--green);
+
+            font-size: 13px;
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 18px;
+        }
+
+        .creative-hero h1 {
+            font-size: clamp(50px, 7vw, 82px);
+
+            line-height: 1.03;
+
+            letter-spacing: -3px;
+
+            margin-bottom: 25px;
+        }
+
+        .creative-hero h1 span {
+            color: var(--green);
+        }
+
+        .creative-hero p {
+            max-width: 750px;
+
+            color: #555;
+
+            font-size: 20px;
+            line-height: 1.7;
+
+            margin-bottom: 35px;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .hero-tag {
+            background: var(--green-light);
+
+            color: var(--green-dark);
+
+            padding: 10px 16px;
+
+            border-radius: 30px;
+
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        section {
+            padding: 95px 0;
+        }
+
+        .section-light {
+            background: var(--light-bg);
+        }
+
+        .section-heading {
+            max-width: 750px;
+
+            margin-bottom: 50px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(34px, 4vw, 48px);
+
+            line-height: 1.15;
+
+            letter-spacing: -1.5px;
+
+            margin-bottom: 15px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           CREATIVE GRID
+        ========================= */
+
+        .creative-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .creative-card {
+            background: #fff;
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .creative-card:hover {
+            transform: translateY(-6px);
+
+            box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+        }
+
+        .creative-image {
+            position: relative;
+
+            width: 100%;
+            aspect-ratio: 3 / 2;
+
+            overflow: hidden;
+
+            cursor: pointer;
+        }
+
+        .creative-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform 0.35s ease;
+        }
+
+        .creative-card:hover img {
+            transform: scale(1.04);
+        }
+
+        .image-overlay {
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(0,0,0,0);
+
+            color: white;
+
+            opacity: 0;
+
+            transition: 0.25s;
+        }
+
+        .creative-card:hover .image-overlay {
+            background: rgba(0,0,0,0.35);
+
+            opacity: 1;
+        }
+
+        .image-overlay i {
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(255,255,255,0.95);
+
+            color: #111;
+
+            font-size: 16px;
+        }
+
+        .creative-card-content {
+            padding: 22px;
+        }
+
+        .creative-category {
+            color: var(--green);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 8px;
+        }
+
+        .creative-card h3 {
+            font-size: 21px;
+
+            margin-bottom: 7px;
+        }
+
+        .creative-card p {
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* Make cards 4 and 5 centered */
+        .creative-grid .creative-card:nth-child(4) {
+            grid-column: 1 / 2;
+        }
+
+        .creative-grid .creative-card:nth-child(5) {
+            grid-column: 2 / 3;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .creative-cta {
+            padding: 80px 0;
+        }
+
+        .creative-cta-box {
+            background: #111;
+
+            color: white;
+
+            border-radius: 24px;
+
+            padding: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 50px;
+        }
+
+        .creative-cta-content {
+            max-width: 700px;
+        }
+
+        .creative-cta h2 {
+            font-size: 40px;
+
+            line-height: 1.15;
+
+            margin-bottom: 15px;
+        }
+
+        .creative-cta p {
+            color: #ccc;
+
+            max-width: 600px;
+        }
+
+        .cta-button {
+            white-space: nowrap;
+
+            display: inline-flex;
+            align-items: center;
+
+            gap: 14px;
+
+            background: var(--green);
+
+            color: white;
+
+            padding: 16px 24px;
+
+            border-radius: 9px;
+
+            font-weight: 700;
+
+            transition: 0.2s;
+        }
+
+        .cta-button:hover {
+            background: var(--green-dark);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           LIGHTBOX
+        ========================= */
+
+        .lightbox {
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0,0,0,0.92);
+
+            z-index: 9999;
+
+            display: none;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 92vw;
+            max-height: 88vh;
+
+            object-fit: contain;
+
+            border-radius: 10px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+
+            top: 25px;
+            right: 30px;
+
+            color: white;
+
+            font-size: 34px;
+
+            cursor: pointer;
+
+            background: none;
+
+            border: none;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            border-top: 1px solid var(--border);
+
+            padding: 35px 20px;
+
+            text-align: center;
+
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            nav ul {
+                gap: 18px;
+            }
+
+            .creative-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .creative-grid .creative-card:nth-child(4),
+            .creative-grid .creative-card:nth-child(5) {
+                grid-column: auto;
+            }
+
+            .creative-cta-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+
+        @media (max-width: 760px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .creative-hero {
+                padding: 75px 0;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .creative-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .creative-cta-box {
+                padding: 38px 28px;
+            }
+
+            .creative-cta h2 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <nav>
+
+        <h2>
+            <a href="index.html">WAI YAN AUNG</a>
+        </h2>
+
+        <ul>
+
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+
+            <li>
+                <a href="index.html#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="index.html#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="index.html#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="meta-ads.html">Meta Ads</a>
+            </li>
+
+            <li>
+                <a href="creative-work.html"
+                   class="active">
+                    Creative Work
+                </a>
+            </li>
+
+            <li>
+                <a href="videography.html">
+                    Videography
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="creative-hero">
+
+    <div class="container">
+
+        <div class="creative-hero-content">
+
+            <span class="eyebrow">
+                Creative Portfolio
+            </span>
+
+            <h1>
+                Photography &<br>
+                <span>Design Work.</span>
+            </h1>
+
+            <p>
+                A selection of photography and visual design work
+                created for people, businesses and social media —
+                combining creative execution with a marketing-focused approach.
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="hero-tag">
+                    Portrait Photography
+                </span>
+
+                <span class="hero-tag">
+                    Food Photography
+                </span>
+
+                <span class="hero-tag">
+                    Beauty Content
+                </span>
+
+                <span class="hero-tag">
+                    Social Media Design
+                </span>
+
+                <span class="hero-tag">
+                    Brand Visuals
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTOGRAPHY
+========================= -->
+
+<section id="photography">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                Photography
+            </span>
+
+            <h2>
+                Visual storytelling through photography.
+            </h2>
+
+            <p>
+                Selected work across portrait, food, beauty,
+                lifestyle and business photography.
+            </p>
+
+        </div>
+
+
+        <div class="creative-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/portrait-1.jpg')">
+
+                    <img src="images/portrait-1.jpg"
+                         alt="Portrait Photography by Wai Yan Aung">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Photography
+                    </div>
+
+                    <h3>Portrait Photography</h3>
+
+                    <p>
+                        Natural portraits focused on expression,
+                        lighting and clean composition.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 2 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/food-1.jpg')">
+
+                    <img src="images/food-1.jpg"
+                         alt="Food Photography">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Photography
+                    </div>
+
+                    <h3>Food Photography</h3>
+
+                    <p>
+                        Food-focused imagery created for restaurant
+                        content and digital marketing.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 3 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/beauty-1.jpg')">
+
+                    <img src="images/beauty-1.jpg"
+                         alt="Beauty and Salon Photography">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Photography
+                    </div>
+
+                    <h3>Beauty & Salon</h3>
+
+                    <p>
+                        Hair, beauty and transformation photography
+                        designed for social media campaigns.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 4 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/lifestyle-1.jpg')">
+
+                    <img src="images/lifestyle-1.jpg"
+                         alt="Lifestyle Photography">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Photography
+                    </div>
+
+                    <h3>Lifestyle Photography</h3>
+
+                    <p>
+                        Candid and environmental imagery
+                        with a natural visual style.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 5 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/business-1.jpg')">
+
+                    <img src="images/business-1.jpg"
+                         alt="Business Photography">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Photography
+                    </div>
+
+                    <h3>Business & Brand</h3>
+
+                    <p>
+                        Professional visual content for teams,
+                        businesses and brand communication.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GRAPHIC DESIGN
+========================= -->
+
+<section id="design"
+         class="section-light">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                Graphic Design
+            </span>
+
+            <h2>
+                Digital design for brands and social media.
+            </h2>
+
+            <p>
+                Selected marketing visuals designed for social media,
+                promotions, menus, campaigns and brand communication.
+            </p>
+
+        </div>
+
+
+        <div class="creative-grid">
+
+
+            <!-- DESIGN 1 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/social-design-1.jpg')">
+
+                    <img src="images/social-design-1.jpg"
+                         alt="Social Media Design">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Graphic Design
+                    </div>
+
+                    <h3>Social Media Posts</h3>
+
+                    <p>
+                        Branded social media creatives designed
+                        for consistent digital communication.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- DESIGN 2 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/promo-design-1.jpg')">
+
+                    <img src="images/promo-design-1.jpg"
+                         alt="Promotional Design">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Graphic Design
+                    </div>
+
+                    <h3>Promotional Campaigns</h3>
+
+                    <p>
+                        Promotional visuals created to communicate
+                        offers, campaigns and seasonal promotions.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- DESIGN 3 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/menu-design-1.jpg')">
+
+                    <img src="images/menu-design-1.jpg"
+                         alt="Menu Design">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Graphic Design
+                    </div>
+
+                    <h3>Menu Design</h3>
+
+                    <p>
+                        Menu and food promotional layouts designed
+                        for clarity and customer-facing communication.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- DESIGN 4 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/carousel-design-1.jpg')">
+
+                    <img src="images/carousel-design-1.jpg"
+                         alt="Carousel Design">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Graphic Design
+                    </div>
+
+                    <h3>Carousel Design</h3>
+
+                    <p>
+                        Multi-slide educational and promotional content
+                        structured for social media engagement.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- DESIGN 5 -->
+
+            <article class="creative-card">
+
+                <div class="creative-image"
+                     onclick="openLightbox('images/brand-design-1.jpg')">
+
+                    <img src="images/brand-design-1.jpg"
+                         alt="Brand and Marketing Design">
+
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+
+                </div>
+
+                <div class="creative-card-content">
+
+                    <div class="creative-category">
+                        Graphic Design
+                    </div>
+
+                    <h3>Brand & Marketing Materials</h3>
+
+                    <p>
+                        Visual marketing assets created to support
+                        campaigns and brand communication.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="creative-cta">
+
+    <div class="container">
+
+        <div class="creative-cta-box">
+
+            <div class="creative-cta-content">
+
+                <span class="eyebrow">
+                    Creative + Marketing
+                </span>
+
+                <h2>
+                    Visual content built with purpose.
+                </h2>
+
+                <p>
+                    My creative work supports broader digital marketing
+                    goals — from social media content and paid advertising
+                    to brand communication and audience engagement.
+                </p>
+
+            </div>
+
+            <a href="index.html#contact"
+               class="cta-button">
+
+                Let's Connect
+
+                <i class="fas fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 Wai Yan Aung |
+    Digital Marketing Specialist · Dubai, UAE
+
+</footer>
+
+
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div id="lightbox"
+     class="lightbox"
+     onclick="closeLightbox(event)">
+
+    <button class="lightbox-close"
+            onclick="closeLightbox()">
+        &times;
+    </button>
+
+    <img id="lightbox-image"
+         src=""
+         alt="Creative Work">
+
+</div>
+
+
+<script>
+
+    function openLightbox(imageSrc) {
+
+        const lightbox = document.getElementById("lightbox");
+        const image = document.getElementById("lightbox-image");
+
+        image.src = imageSrc;
+
+        lightbox.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+    }
+
+
+    function closeLightbox(event) {
+
+        if (
+            !event ||
+            event.target.id === "lightbox" ||
+            event.target.classList.contains("lightbox-close")
+        ) {
+
+            document
+                .getElementById("lightbox")
+                .classList.remove("active");
+
+            document.body.style.overflow = "";
+        }
+    }
+
+
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "Escape") {
+
+            document
+                .getElementById("lightbox")
+                .classList.remove("active");
+
+            document.body.style.overflow = "";
+        }
+
+    });
+
+</script>
+
+
+</body>
+</html>
