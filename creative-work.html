@@ -22,9 +22,9 @@
     />
 
     <style>
-      /* =========================
-           RESET
-        ========================= */
+      /* =========================================================
+       RESET
+    ========================================================= */
 
       * {
         margin: 0;
@@ -66,9 +66,9 @@
         margin: 0 auto;
       }
 
-      /* =========================
-           NAVIGATION
-        ========================= */
+      /* =========================================================
+       NAVIGATION
+    ========================================================= */
 
       header {
         position: sticky;
@@ -124,9 +124,9 @@
         color: var(--green);
       }
 
-      /* =========================
-           HERO
-        ========================= */
+      /* =========================================================
+       HERO
+    ========================================================= */
 
       .creative-hero {
         padding: 110px 0 95px;
@@ -158,7 +158,6 @@
         font-size: clamp(50px, 7vw, 82px);
 
         line-height: 1.03;
-
         letter-spacing: -3px;
 
         margin-bottom: 25px;
@@ -188,7 +187,6 @@
 
       .hero-tag {
         background: var(--green-light);
-
         color: var(--green-dark);
 
         padding: 10px 16px;
@@ -199,9 +197,9 @@
         font-weight: 700;
       }
 
-      /* =========================
-           GENERAL SECTIONS
-        ========================= */
+      /* =========================================================
+       GENERAL SECTIONS
+    ========================================================= */
 
       section {
         padding: 95px 0;
@@ -213,7 +211,6 @@
 
       .section-heading {
         max-width: 760px;
-
         margin-bottom: 50px;
       }
 
@@ -221,7 +218,6 @@
         font-size: clamp(34px, 4vw, 48px);
 
         line-height: 1.15;
-
         letter-spacing: -1.5px;
 
         margin-bottom: 15px;
@@ -233,9 +229,9 @@
         font-size: 17px;
       }
 
-      /* =========================
-           CREATIVE GRID
-        ========================= */
+      /* =========================================================
+       CREATIVE GRID
+    ========================================================= */
 
       .creative-grid {
         display: grid;
@@ -249,7 +245,6 @@
         background: #fff;
 
         border: 1px solid var(--border);
-
         border-radius: 18px;
 
         overflow: hidden;
@@ -265,9 +260,10 @@
         box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
       }
 
-      /* =========================
-           4:5 IMAGE RATIO
-        ========================= */
+      /* =========================================================
+       PHOTOGRAPHY IMAGE FRAME
+       4:5 + COVER
+    ========================================================= */
 
       .creative-image {
         position: relative;
@@ -288,23 +284,41 @@
         height: 100%;
 
         object-fit: cover;
+        object-position: center;
 
         transition: transform 0.35s ease;
       }
 
-      .creative-card:hover img {
+      .creative-card:hover .creative-image img {
         transform: scale(1.035);
       }
-
-      /* Interior needs slightly wider framing */
 
       .creative-image.interior img {
         object-position: center center;
       }
 
-      /* =========================
-           IMAGE OVERLAY
-        ========================= */
+      /* =========================================================
+       GRAPHIC DESIGN IMAGE FRAME
+       KEEP ORIGINAL ARTWORK / NO CROPPING
+    ========================================================= */
+
+      .creative-image.design-image {
+        background: #eeeeee;
+      }
+
+      .creative-image.design-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        object-position: center;
+
+        background: #eeeeee;
+      }
+
+      /* =========================================================
+       IMAGE OVERLAY
+    ========================================================= */
 
       .image-overlay {
         position: absolute;
@@ -347,9 +361,9 @@
         font-size: 16px;
       }
 
-      /* =========================
-           CARD CONTENT
-        ========================= */
+      /* =========================================================
+       CARD CONTENT
+    ========================================================= */
 
       .creative-card-content {
         padding: 22px;
@@ -362,7 +376,6 @@
         font-weight: 800;
 
         letter-spacing: 1px;
-
         text-transform: uppercase;
 
         margin-bottom: 8px;
@@ -383,9 +396,9 @@
         line-height: 1.65;
       }
 
-      /* =========================
-           FIVE-CARD LAYOUT
-        ========================= */
+      /* =========================================================
+       FIVE-CARD LAYOUT
+    ========================================================= */
 
       .five-card-grid .creative-card:nth-child(4) {
         grid-column: 1 / 2;
@@ -395,9 +408,9 @@
         grid-column: 2 / 3;
       }
 
-      /* =========================
-           CTA
-        ========================= */
+      /* =========================================================
+       CTA
+    ========================================================= */
 
       .creative-cta {
         padding: 80px 0;
@@ -405,7 +418,6 @@
 
       .creative-cta-box {
         background: #111;
-
         color: white;
 
         border-radius: 24px;
@@ -446,7 +458,6 @@
         gap: 14px;
 
         background: var(--green);
-
         color: white;
 
         padding: 16px 24px;
@@ -466,9 +477,9 @@
         transform: translateY(-2px);
       }
 
-      /* =========================
-           LIGHTBOX
-        ========================= */
+      /* =========================================================
+       LIGHTBOX
+    ========================================================= */
 
       .lightbox {
         position: fixed;
@@ -531,9 +542,9 @@
         background: rgba(255, 255, 255, 0.22);
       }
 
-      /* =========================
-           FOOTER
-        ========================= */
+      /* =========================================================
+       FOOTER
+    ========================================================= */
 
       footer {
         border-top: 1px solid var(--border);
@@ -547,9 +558,9 @@
         font-size: 14px;
       }
 
-      /* =========================
-           RESPONSIVE
-        ========================= */
+      /* =========================================================
+       RESPONSIVE
+    ========================================================= */
 
       @media (max-width: 1050px) {
         nav ul {
@@ -621,9 +632,9 @@
   </head>
 
   <body>
-    <!-- =========================
-     HEADER
-========================= -->
+    <!-- =========================================================
+       HEADER
+  ========================================================= -->
 
     <header>
       <nav>
@@ -667,9 +678,9 @@
       </nav>
     </header>
 
-    <!-- =========================
-     HERO
-========================= -->
+    <!-- =========================================================
+       HERO
+  ========================================================= -->
 
     <section class="creative-hero">
       <div class="container">
@@ -702,9 +713,9 @@
       </div>
     </section>
 
-    <!-- =========================
-     PHOTOGRAPHY
-========================= -->
+    <!-- =========================================================
+       PHOTOGRAPHY
+  ========================================================= -->
 
     <section id="photography">
       <div class="container">
@@ -720,9 +731,7 @@
         </div>
 
         <div class="creative-grid five-card-grid">
-          <!-- =========================
-                 PHOTO 1 — PORTRAIT
-            ========================= -->
+          <!-- PHOTO 1 — PORTRAIT -->
 
           <article class="creative-card">
             <div
@@ -754,9 +763,7 @@
             </div>
           </article>
 
-          <!-- =========================
-                 PHOTO 2 — FOOD LIFESTYLE
-            ========================= -->
+          <!-- PHOTO 2 — FOOD & LIFESTYLE -->
 
           <article class="creative-card">
             <div
@@ -790,9 +797,7 @@
             </div>
           </article>
 
-          <!-- =========================
-                 PHOTO 3 — BEAUTY
-            ========================= -->
+          <!-- PHOTO 3 — BEAUTY -->
 
           <article class="creative-card">
             <div
@@ -824,9 +829,7 @@
             </div>
           </article>
 
-          <!-- =========================
-                 PHOTO 4 — INTERIOR
-            ========================= -->
+          <!-- PHOTO 4 — INTERIOR -->
 
           <article class="creative-card">
             <div
@@ -860,9 +863,7 @@
             </div>
           </article>
 
-          <!-- =========================
-                 PHOTO 5 — FOOD
-            ========================= -->
+          <!-- PHOTO 5 — FOOD -->
 
           <article class="creative-card">
             <div
@@ -895,9 +896,9 @@
       </div>
     </section>
 
-    <!-- =========================
-     GRAPHIC DESIGN
-========================= -->
+    <!-- =========================================================
+       GRAPHIC DESIGN
+  ========================================================= -->
 
     <section id="design" class="section-light">
       <div class="container">
@@ -907,24 +908,24 @@
           <h2>Digital design for brands and social media.</h2>
 
           <p>
-            Selected marketing visuals designed for social media, promotions,
-            menus, campaigns and brand communication.
+            Selected marketing visuals created for social media, promotions,
+            menus, service communication and branded informational content.
           </p>
         </div>
 
         <div class="creative-grid five-card-grid">
-          <!-- =========================
-                 DESIGN 1
-            ========================= -->
+          <!-- =====================================================
+             DESIGN 1 — SOCIAL MEDIA CREATIVE
+        ====================================================== -->
 
           <article class="creative-card">
             <div
-              class="creative-image"
-              onclick="openLightbox('images/design/social-media-design.webp')"
+              class="creative-image design-image"
+              onclick="openLightbox('images/design/social-media-creative.webp')"
             >
               <img
-                src="images/design/social-media-design.webp"
-                alt="Social media graphic design by Wai Yan Aung"
+                src="images/design/social-media-creative.webp"
+                alt="Social media creative for Barkadahan Food Hub by Wai Yan Aung"
                 loading="lazy"
               />
 
@@ -936,27 +937,28 @@
             <div class="creative-card-content">
               <div class="creative-category">Graphic Design</div>
 
-              <h3>Social Media Posts</h3>
+              <h3>Social Media Creative</h3>
 
               <p>
-                Branded social media creatives designed for consistent digital
+                Product-focused social media artwork designed for Barkadahan
+                Food Hub to promote seasonal mocktails through branded visual
                 communication.
               </p>
             </div>
           </article>
 
-          <!-- =========================
-                 DESIGN 2
-            ========================= -->
+          <!-- =====================================================
+             DESIGN 2 — PROMOTIONAL CAMPAIGN
+        ====================================================== -->
 
           <article class="creative-card">
             <div
-              class="creative-image"
-              onclick="openLightbox('images/design/promotional-design.webp')"
+              class="creative-image design-image"
+              onclick="openLightbox('images/design/promotional-campaign.webp')"
             >
               <img
-                src="images/design/promotional-design.webp"
-                alt="Promotional campaign graphic design by Wai Yan Aung"
+                src="images/design/promotional-campaign.webp"
+                alt="Promotional giveaway campaign for Casa Barkada Salon by Wai Yan Aung"
                 loading="lazy"
               />
 
@@ -968,27 +970,28 @@
             <div class="creative-card-content">
               <div class="creative-category">Graphic Design</div>
 
-              <h3>Promotional Campaigns</h3>
+              <h3>Promotional Campaign</h3>
 
               <p>
-                Promotional visuals created to communicate offers, campaigns and
-                seasonal promotions.
+                Giveaway campaign creative developed for Casa Barkada Salon with
+                clear promotional messaging, participation mechanics and
+                call-to-action.
               </p>
             </div>
           </article>
 
-          <!-- =========================
-                 DESIGN 3
-            ========================= -->
+          <!-- =====================================================
+             DESIGN 3 — MENU DESIGN
+        ====================================================== -->
 
           <article class="creative-card">
             <div
-              class="creative-image"
+              class="creative-image design-image"
               onclick="openLightbox('images/design/menu-design.webp')"
             >
               <img
                 src="images/design/menu-design.webp"
-                alt="Menu design by Wai Yan Aung"
+                alt="Restaurant menu design for Barkadahan Food Hub by Wai Yan Aung"
                 loading="lazy"
               />
 
@@ -1003,24 +1006,24 @@
               <h3>Menu Design</h3>
 
               <p>
-                Menu and food promotional layouts designed for clarity and
-                customer-facing communication.
+                Restaurant menu layout combining food photography, pricing,
+                product descriptions and branded visual hierarchy.
               </p>
             </div>
           </article>
 
-          <!-- =========================
-                 DESIGN 4
-            ========================= -->
+          <!-- =====================================================
+             DESIGN 4 — VISUAL GUIDE DESIGN
+        ====================================================== -->
 
           <article class="creative-card">
             <div
-              class="creative-image"
-              onclick="openLightbox('images/design/carousel-design.webp')"
+              class="creative-image design-image"
+              onclick="openLightbox('images/design/visual-guide-design.webp')"
             >
               <img
-                src="images/design/carousel-design.webp"
-                alt="Social media carousel design by Wai Yan Aung"
+                src="images/design/visual-guide-design.webp"
+                alt="Hair color visual guide for Casa Barkada Salon by Wai Yan Aung"
                 loading="lazy"
               />
 
@@ -1032,29 +1035,29 @@
             <div class="creative-card-content">
               <div class="creative-category">Graphic Design</div>
 
-              <h3>Carousel Design</h3>
+              <h3>Visual Guide Design</h3>
 
               <p>
-                Multi-slide educational and promotional content structured for
-                social media engagement.
+                Hair color reference guide designed to simplify service choices,
+                color levels, tones and pricing for customers.
               </p>
             </div>
           </article>
 
-          <!-- =========================
-                 DESIGN 5
-            ========================= -->
+          <!-- =====================================================
+             DESIGN 5 — SERVICE MARKETING CREATIVE
+        ====================================================== -->
 
           <article class="creative-card">
             <div
-              class="creative-image"
+              class="creative-image design-image"
               onclick="
-                openLightbox('images/design/brand-marketing-design.webp')
+                openLightbox('images/design/service-marketing-creative.webp')
               "
             >
               <img
-                src="images/design/brand-marketing-design.webp"
-                alt="Brand and marketing design by Wai Yan Aung"
+                src="images/design/service-marketing-creative.webp"
+                alt="Hair color service marketing creative for Casa Barkada Salon by Wai Yan Aung"
                 loading="lazy"
               />
 
@@ -1066,11 +1069,11 @@
             <div class="creative-card-content">
               <div class="creative-category">Graphic Design</div>
 
-              <h3>Brand & Marketing Materials</h3>
+              <h3>Service Marketing Creative</h3>
 
               <p>
-                Visual marketing assets created to support campaigns and brand
-                communication.
+                Service-focused promotional artwork designed to communicate hair
+                color options, starting price and salon branding clearly.
               </p>
             </div>
           </article>
@@ -1078,9 +1081,9 @@
       </div>
     </section>
 
-    <!-- =========================
-     CTA
-========================= -->
+    <!-- =========================================================
+       CTA
+  ========================================================= -->
 
     <section class="creative-cta">
       <div class="container">
@@ -1106,17 +1109,17 @@
       </div>
     </section>
 
-    <!-- =========================
-     FOOTER
-========================= -->
+    <!-- =========================================================
+       FOOTER
+  ========================================================= -->
 
     <footer>
       © 2026 Wai Yan Aung | Digital Marketing Specialist · Dubai, UAE
     </footer>
 
-    <!-- =========================
-     LIGHTBOX
-========================= -->
+    <!-- =========================================================
+       LIGHTBOX
+  ========================================================= -->
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
       <button
@@ -1131,9 +1134,9 @@
       <img id="lightbox-image" src="" alt="Creative Work" />
     </div>
 
-    <!-- =========================
-     LIGHTBOX JAVASCRIPT
-========================= -->
+    <!-- =========================================================
+       LIGHTBOX JAVASCRIPT
+  ========================================================= -->
 
     <script>
       function openLightbox(imageSrc) {
