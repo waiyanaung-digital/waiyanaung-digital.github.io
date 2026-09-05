@@ -1,1441 +1,1592 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
 
-  <title>Meta Ads Portfolio | Wai Yan Aung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description"
-        content="Meta Ads portfolio of Wai Yan Aung, Digital Marketing Specialist in Dubai. Selected paid social campaigns across traffic, audience growth, engagement, video promotion and retargeting.">
+    <title>Meta Ads Portfolio | Wai Yan Aung</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta
+      name="description"
+      content="Meta Ads portfolio of Wai Yan Aung, Digital Marketing Specialist in Dubai. Selected paid social campaigns across traffic, audience growth, engagement, video promotion and retargeting."
+    />
 
-    html {
-      scroll-behavior: smooth;
-    }
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" />
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #111;
-      background: #ffffff;
-      line-height: 1.6;
-    }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    :root {
-      --green: #009b72;
-      --green-dark: #007f5f;
-      --green-light: #eaf8f3;
-      --text: #111111;
-      --muted: #666666;
-      --border: #e5e5e5;
-      --background: #f7f7f7;
-      --white: #ffffff;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111;
+        background: #ffffff;
+        line-height: 1.6;
+      }
 
-    .container {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-    }
+      :root {
+        --green: #009b72;
+        --green-dark: #007f5f;
+        --green-light: #eaf8f3;
+        --text: #111111;
+        --muted: #666666;
+        --border: #e5e5e5;
+        --background: #f7f7f7;
+        --white: #ffffff;
+      }
 
-    /* =========================
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      /* =========================
        NAVIGATION
     ========================== */
 
-    header {
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+      header {
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid var(--border);
 
-    .nav {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
+        position: sticky;
+        top: 0;
 
-    .logo {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
+        z-index: 1000;
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      list-style: none;
-    }
+        backdrop-filter: blur(10px);
+      }
 
-    .nav-links a {
-      font-size: 15px;
-      transition: 0.2s;
-    }
+      .nav {
+        min-height: 82px;
 
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--green);
-    }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    /* =========================
+        gap: 30px;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: 800;
+
+        letter-spacing: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+
+        gap: 26px;
+
+        list-style: none;
+      }
+
+      .nav-links a {
+        font-size: 15px;
+
+        transition: 0.2s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: var(--green);
+      }
+
+      /* =========================
        HERO
     ========================== */
 
-    .hero {
-      padding: 110px 0 95px;
-      background:
-        radial-gradient(circle at 80% 20%, #e9f8f2 0, transparent 30%),
-        #f7f7f7;
-    }
-
-    .hero-content {
-      max-width: 900px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      color: var(--green);
-      font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      font-size: clamp(48px, 7vw, 82px);
-      line-height: 1.02;
-      letter-spacing: -3px;
-      margin-bottom: 25px;
-    }
-
-    .hero h1 span {
-      color: var(--green);
-    }
-
-    .hero-description {
-      max-width: 780px;
-      font-size: 21px;
-      color: #444;
-      margin-bottom: 35px;
-    }
-
-    .hero-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 38px;
-    }
-
-    .tag {
-      padding: 10px 17px;
-      background: var(--green-light);
-      color: var(--green-dark);
-      border-radius: 30px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 50px;
-      padding: 0 24px;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    .btn-primary {
-      color: white;
-      background: var(--green);
-      border: 2px solid var(--green);
-    }
-
-    .btn-primary:hover {
-      background: var(--green-dark);
-      border-color: var(--green-dark);
-    }
-
-    .btn-secondary {
-      color: var(--green);
-      background: transparent;
-      border: 2px solid var(--green);
-    }
-
-    .btn-secondary:hover {
-      background: var(--green-light);
-    }
-
-    /* =========================
-       GENERAL SECTION
-    ========================== */
-
-    section {
-      padding: 95px 0;
-    }
-
-    .section-light {
-      background: var(--background);
-    }
-
-    .section-heading {
-      max-width: 760px;
-      margin-bottom: 48px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(34px, 4vw, 48px);
-      line-height: 1.15;
-      letter-spacing: -1.5px;
-      margin-bottom: 15px;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-      font-size: 17px;
-    }
-
-    /* =========================
-       PERFORMANCE SNAPSHOT
-    ========================== */
-
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .metric-card {
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 30px;
-      background: white;
-    }
-
-    .metric-number {
-      display: block;
-      color: var(--green);
-      font-size: 38px;
-      line-height: 1;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    .metric-label {
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .metric-context {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* =========================
-       FEATURED CASE STUDIES
-    ========================== */
-
-    .case-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .case-card {
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 30px;
-      background: white;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .case-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.07);
-    }
-
-    .brand {
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 13px;
-    }
-
-    .case-card h3 {
-      font-size: 25px;
-      line-height: 1.25;
-      margin-bottom: 12px;
-    }
-
-    .case-card > p {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 25px;
-    }
-
-    .case-main-result {
-      padding: 22px;
-      background: var(--green-light);
-      border-radius: 12px;
-      margin-bottom: 22px;
-    }
-
-    .case-main-result strong {
-      display: block;
-      color: var(--green-dark);
-      font-size: 34px;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-
-    .case-main-result span {
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .case-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-
-    .case-stat {
-      border-top: 1px solid var(--border);
-      padding-top: 13px;
-    }
-
-    .case-stat strong {
-      display: block;
-      font-size: 17px;
-    }
-
-    .case-stat span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    /* =========================
-       TABLE
-    ========================== */
-
-    .table-wrapper {
-      overflow-x: auto;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: white;
-    }
-
-    .performance-table {
-      width: 100%;
-      min-width: 1050px;
-      border-collapse: collapse;
-    }
-
-    .performance-table th {
-      background: #111;
-      color: white;
-      text-align: left;
-      padding: 17px 16px;
-      font-size: 13px;
-      white-space: nowrap;
-    }
-
-    .performance-table td {
-      padding: 17px 16px;
-      border-bottom: 1px solid var(--border);
-      font-size: 14px;
-      vertical-align: top;
-    }
-
-    .performance-table tbody tr:last-child td {
-      border-bottom: 0;
-    }
-
-    .performance-table tbody tr:hover {
-      background: #f8fcfa;
-    }
-
-    .performance-table strong {
-      color: var(--green-dark);
-    }
-
-    .brand-small {
-      font-weight: 700;
-    }
-
-    .objective-pill {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 20px;
-      background: var(--green-light);
-      color: var(--green-dark);
-      font-size: 12px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    /* =========================
-       CAPABILITIES
-    ========================== */
-
-    .capability-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .capability {
-      padding: 28px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: white;
-    }
-
-    .capability-number {
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
-
-    .capability h3 {
-      margin-bottom: 8px;
-      font-size: 19px;
-    }
-
-    .capability p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* =========================
-       PROCESS
-    ========================== */
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 15px;
-    }
-
-    .process-step {
-      position: relative;
-      padding: 25px 20px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-    }
-
-    .step-number {
-      width: 35px;
-      height: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--green);
-      color: white;
-      border-radius: 50%;
-      font-size: 13px;
-      font-weight: 800;
-      margin-bottom: 17px;
-    }
-
-    .process-step h3 {
-      font-size: 17px;
-      margin-bottom: 7px;
-    }
-
-    .process-step p {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* =========================
-       TOOLS
-    ========================== */
-
-    .tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .tool {
-      padding: 12px 18px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-weight: 700;
-      background: white;
-    }
-
-    /* =========================
-       CTA
-    ========================== */
-
-    .cta {
-      padding: 80px 0;
-    }
-
-    .cta-box {
-      background: #111;
-      color: white;
-      border-radius: 22px;
-      padding: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-    }
-
-    .cta-box h2 {
-      font-size: 38px;
-      line-height: 1.15;
-      margin-bottom: 12px;
-    }
-
-    .cta-box p {
-      color: #c7c7c7;
-      max-width: 620px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      padding: 35px 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
-
-    @media (max-width: 950px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .metrics-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .case-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .capability-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .cta-box {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .container {
-        width: min(100% - 28px, 1180px);
-      }
-
       .hero {
-        padding: 75px 0;
+        padding: 110px 0 95px;
+
+        background:
+          radial-gradient(circle at 80% 20%, #e9f8f2 0, transparent 30%),
+          #f7f7f7;
+      }
+
+      .hero-content {
+        max-width: 900px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+
+        color: var(--green);
+
+        font-size: 14px;
+        font-weight: 800;
+
+        letter-spacing: 1.5px;
+
+        text-transform: uppercase;
+
+        margin-bottom: 18px;
       }
 
       .hero h1 {
-        letter-spacing: -2px;
+        font-size: clamp(48px, 7vw, 82px);
+
+        line-height: 1.02;
+
+        letter-spacing: -3px;
+
+        margin-bottom: 25px;
       }
+
+      .hero h1 span {
+        color: var(--green);
+      }
+
+      .hero-description {
+        max-width: 780px;
+
+        font-size: 21px;
+
+        color: #444;
+
+        margin-bottom: 35px;
+      }
+
+      .hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        margin-bottom: 38px;
+      }
+
+      .tag {
+        padding: 10px 17px;
+
+        background: var(--green-light);
+
+        color: var(--green-dark);
+
+        border-radius: 30px;
+
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 14px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 50px;
+
+        padding: 0 24px;
+
+        border-radius: 8px;
+
+        font-weight: 700;
+
+        transition: 0.2s ease;
+      }
+
+      .btn-primary {
+        color: white;
+
+        background: var(--green);
+
+        border: 2px solid var(--green);
+      }
+
+      .btn-primary:hover {
+        background: var(--green-dark);
+
+        border-color: var(--green-dark);
+      }
+
+      .btn-secondary {
+        color: var(--green);
+
+        background: transparent;
+
+        border: 2px solid var(--green);
+      }
+
+      .btn-secondary:hover {
+        background: var(--green-light);
+      }
+
+      /* =========================
+       GENERAL SECTION
+    ========================== */
 
       section {
-        padding: 70px 0;
+        padding: 95px 0;
       }
 
-      .metrics-grid,
-      .capability-grid,
+      .section-light {
+        background: var(--background);
+      }
+
+      .section-heading {
+        max-width: 760px;
+
+        margin-bottom: 48px;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(34px, 4vw, 48px);
+
+        line-height: 1.15;
+
+        letter-spacing: -1.5px;
+
+        margin-bottom: 15px;
+      }
+
+      .section-heading p {
+        color: var(--muted);
+
+        font-size: 17px;
+      }
+
+      /* =========================
+       PERFORMANCE SNAPSHOT
+    ========================== */
+
+      .metrics-grid {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 18px;
+      }
+
+      .metric-card {
+        border: 1px solid var(--border);
+
+        border-radius: 16px;
+
+        padding: 30px;
+
+        background: white;
+      }
+
+      .metric-number {
+        display: block;
+
+        color: var(--green);
+
+        font-size: 38px;
+        line-height: 1;
+
+        font-weight: 800;
+
+        margin-bottom: 12px;
+      }
+
+      .metric-label {
+        font-weight: 700;
+
+        margin-bottom: 6px;
+      }
+
+      .metric-context {
+        color: var(--muted);
+
+        font-size: 13px;
+      }
+
+      /* =========================
+       FEATURED CASE STUDIES
+    ========================== */
+
+      .case-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 22px;
+      }
+
+      .case-card {
+        border: 1px solid var(--border);
+
+        border-radius: 18px;
+
+        padding: 30px;
+
+        background: white;
+
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .case-card:hover {
+        transform: translateY(-5px);
+
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+      }
+
+      .brand {
+        color: var(--green);
+
+        font-size: 13px;
+        font-weight: 800;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 13px;
+      }
+
+      .case-card h3 {
+        font-size: 25px;
+
+        line-height: 1.25;
+
+        margin-bottom: 12px;
+      }
+
+      .case-card > p {
+        color: var(--muted);
+
+        font-size: 15px;
+
+        margin-bottom: 25px;
+      }
+
+      .case-main-result {
+        padding: 22px;
+
+        background: var(--green-light);
+
+        border-radius: 12px;
+
+        margin-bottom: 22px;
+      }
+
+      .case-main-result strong {
+        display: block;
+
+        color: var(--green-dark);
+
+        font-size: 34px;
+
+        line-height: 1;
+
+        margin-bottom: 8px;
+      }
+
+      .case-main-result span {
+        font-size: 14px;
+
+        font-weight: 700;
+      }
+
+      .case-stats {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+      }
+
+      .case-stat {
+        border-top: 1px solid var(--border);
+
+        padding-top: 13px;
+      }
+
+      .case-stat strong {
+        display: block;
+
+        font-size: 17px;
+      }
+
+      .case-stat span {
+        color: var(--muted);
+
+        font-size: 12px;
+      }
+
+      /* =========================
+       TABLE
+    ========================== */
+
+      .table-wrapper {
+        overflow-x: auto;
+
+        border: 1px solid var(--border);
+
+        border-radius: 16px;
+
+        background: white;
+      }
+
+      .performance-table {
+        width: 100%;
+
+        min-width: 1050px;
+
+        border-collapse: collapse;
+      }
+
+      .performance-table th {
+        background: #111;
+
+        color: white;
+
+        text-align: left;
+
+        padding: 17px 16px;
+
+        font-size: 13px;
+
+        white-space: nowrap;
+      }
+
+      .performance-table td {
+        padding: 17px 16px;
+
+        border-bottom: 1px solid var(--border);
+
+        font-size: 14px;
+
+        vertical-align: top;
+      }
+
+      .performance-table tbody tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .performance-table tbody tr:hover {
+        background: #f8fcfa;
+      }
+
+      .performance-table strong {
+        color: var(--green-dark);
+      }
+
+      .brand-small {
+        font-weight: 700;
+      }
+
+      .objective-pill {
+        display: inline-block;
+
+        padding: 5px 10px;
+
+        border-radius: 20px;
+
+        background: var(--green-light);
+
+        color: var(--green-dark);
+
+        font-size: 12px;
+        font-weight: 700;
+
+        white-space: nowrap;
+      }
+
+      /* =========================
+       CAPABILITIES
+    ========================== */
+
+      .capability-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 18px;
+      }
+
+      .capability {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+
+        border-radius: 14px;
+
+        background: white;
+      }
+
+      .capability-number {
+        color: var(--green);
+
+        font-size: 13px;
+        font-weight: 800;
+
+        margin-bottom: 15px;
+      }
+
+      .capability h3 {
+        margin-bottom: 8px;
+
+        font-size: 19px;
+      }
+
+      .capability p {
+        color: var(--muted);
+
+        font-size: 14px;
+      }
+
+      /* =========================
+       PROCESS
+    ========================== */
+
       .process-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+
+        grid-template-columns: repeat(5, 1fr);
+
+        gap: 15px;
+      }
+
+      .process-step {
+        position: relative;
+
+        padding: 25px 20px;
+
+        border: 1px solid var(--border);
+
+        border-radius: 14px;
+      }
+
+      .step-number {
+        width: 35px;
+        height: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--green);
+
+        color: white;
+
+        border-radius: 50%;
+
+        font-size: 13px;
+        font-weight: 800;
+
+        margin-bottom: 17px;
+      }
+
+      .process-step h3 {
+        font-size: 17px;
+
+        margin-bottom: 7px;
+      }
+
+      .process-step p {
+        color: var(--muted);
+
+        font-size: 13px;
+      }
+
+      /* =========================
+       TOOLS
+    ========================== */
+
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 12px;
+      }
+
+      .tool {
+        padding: 12px 18px;
+
+        border: 1px solid var(--border);
+
+        border-radius: 8px;
+
+        font-weight: 700;
+
+        background: white;
+      }
+
+      /* =========================
+       CTA
+    ========================== */
+
+      .cta {
+        padding: 80px 0;
       }
 
       .cta-box {
-        padding: 35px 25px;
+        background: #111;
+
+        color: white;
+
+        border-radius: 22px;
+
+        padding: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 40px;
       }
 
       .cta-box h2 {
-        font-size: 30px;
+        font-size: 38px;
+
+        line-height: 1.15;
+
+        margin-bottom: 12px;
+      }
+
+      .cta-box p {
+        color: #c7c7c7;
+
+        max-width: 620px;
+      }
+
+      /* =========================
+       FOOTER
+    ========================== */
+
+      footer {
+        padding: 35px 0;
+
+        border-top: 1px solid var(--border);
       }
 
       .footer-content {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+
+        gap: 30px;
+
+        color: var(--muted);
+
+        font-size: 14px;
       }
-    }
 
-  </style>
-</head>
+      /* =========================
+       RESPONSIVE
+    ========================== */
 
+      @media (max-width: 1100px) {
+        .nav-links {
+          gap: 17px;
+        }
 
-<body>
+        .nav-links a {
+          font-size: 14px;
+        }
+      }
 
-<!-- =========================
+      @media (max-width: 950px) {
+        .nav-links {
+          display: none;
+        }
+
+        .metrics-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .case-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .capability-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .process-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .cta-box {
+          flex-direction: column;
+
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          width: min(100% - 28px, 1180px);
+        }
+
+        .hero {
+          padding: 75px 0;
+        }
+
+        .hero h1 {
+          letter-spacing: -2px;
+        }
+
+        section {
+          padding: 70px 0;
+        }
+
+        .metrics-grid,
+        .capability-grid,
+        .process-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cta-box {
+          padding: 35px 25px;
+        }
+
+        .cta-box h2 {
+          font-size: 30px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================
      NAVIGATION
 ========================== -->
 
-<header>
-  <div class="container nav">
+    <header>
+      <div class="container nav">
+        <a href="index.html" class="logo"> WAI YAN AUNG </a>
 
-    <a href="index.html" class="logo">
-      WAI YAN AUNG
-    </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html#about"> About </a>
+          </li>
 
-    <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#experience">Experience</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="meta-ads.html" class="active">Meta Ads</a></li>
-      <li><a href="index.html#videography">Videography</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
+          <li>
+            <a href="index.html#skills"> Skills </a>
+          </li>
 
-  </div>
-</header>
+          <li>
+            <a href="index.html#experience"> Experience </a>
+          </li>
 
+          <li>
+            <a href="index.html#projects"> Projects </a>
+          </li>
 
-<!-- =========================
+          <li>
+            <a href="meta-ads.html" class="active"> Meta Ads </a>
+          </li>
+
+          <li>
+            <a href="creative-work.html"> Creative Work </a>
+          </li>
+
+          <li>
+            <a href="videography.html"> Videography </a>
+          </li>
+
+          <li>
+            <a href="index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- =========================
      HERO
 ========================== -->
 
-<section class="hero">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow"> Performance Marketing Portfolio </span>
 
-  <div class="container">
+          <h1>
+            Meta Ads &<br />
+            <span>Paid Social.</span>
+          </h1>
 
-    <div class="hero-content">
+          <p class="hero-description">
+            Selected Meta advertising campaigns managed for food & beverage and
+            beauty brands in Dubai — covering website traffic, audience growth,
+            engagement, video promotion and retargeting.
+          </p>
 
-      <span class="eyebrow">
-        Performance Marketing Portfolio
-      </span>
+          <div class="hero-tags">
+            <span class="tag"> Meta Ads Manager </span>
 
-      <h1>
-        Meta Ads &<br>
-        <span>Paid Social.</span>
-      </h1>
+            <span class="tag"> Campaign Strategy </span>
 
-      <p class="hero-description">
-        Selected Meta advertising campaigns managed for food & beverage
-        and beauty brands in Dubai — covering website traffic, audience
-        growth, engagement, video promotion and retargeting.
-      </p>
+            <span class="tag"> Audience Targeting </span>
 
-      <div class="hero-tags">
-        <span class="tag">Meta Ads Manager</span>
-        <span class="tag">Campaign Strategy</span>
-        <span class="tag">Audience Targeting</span>
-        <span class="tag">Creative Testing</span>
-        <span class="tag">Optimization</span>
-        <span class="tag">GA4 Analytics</span>
+            <span class="tag"> Creative Testing </span>
+
+            <span class="tag"> Optimization </span>
+
+            <span class="tag"> GA4 Analytics </span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#case-studies" class="btn btn-primary">
+              View Case Studies
+            </a>
+
+            <a href="#campaigns" class="btn btn-secondary">
+              Campaign Results
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="hero-actions">
-
-        <a href="#case-studies" class="btn btn-primary">
-          View Case Studies
-        </a>
-
-        <a href="#campaigns" class="btn btn-secondary">
-          Campaign Results
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      PERFORMANCE SNAPSHOT
 ========================== -->
 
-<section>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow"> Performance Snapshot </span>
 
-  <div class="container">
+          <h2>Campaign results backed by measurable performance.</h2>
 
-    <div class="section-heading">
+          <p>
+            Selected performance highlights from campaigns managed across
+            Barkadahan Food Hub and Casa Barkada Salon.
+          </p>
+        </div>
 
-      <span class="eyebrow">
-        Performance Snapshot
-      </span>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-number"> 448K+ </span>
 
-      <h2>
-        Campaign results backed by measurable performance.
-      </h2>
+            <div class="metric-label">Impressions</div>
 
-      <p>
-        Selected performance highlights from campaigns managed across
-        Barkadahan Food Hub and Casa Barkada Salon.
-      </p>
+            <div class="metric-context">
+              Highest-volume selected website traffic campaign
+            </div>
+          </div>
 
-    </div>
+          <div class="metric-card">
+            <span class="metric-number"> 5.1K+ </span>
 
+            <div class="metric-label">Landing Page Views</div>
 
-    <div class="metrics-grid">
+            <div class="metric-context">
+              Generated by the featured website traffic campaign
+            </div>
+          </div>
 
-      <div class="metric-card">
-        <span class="metric-number">448K+</span>
-        <div class="metric-label">Impressions</div>
-        <div class="metric-context">
-          Highest-volume selected website traffic campaign
+          <div class="metric-card">
+            <span class="metric-number"> AED 0.10 </span>
+
+            <div class="metric-label">Profile Visit</div>
+
+            <div class="metric-context">
+              Approx. cost per result on top discovery campaigns
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-number"> 14.9K+ </span>
+
+            <div class="metric-label">Video ThruPlays</div>
+
+            <div class="metric-context">
+              Generated through paid video promotion
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="metric-card">
-        <span class="metric-number">5.1K+</span>
-        <div class="metric-label">Landing Page Views</div>
-        <div class="metric-context">
-          Generated by the featured website traffic campaign
-        </div>
-      </div>
-
-      <div class="metric-card">
-        <span class="metric-number">AED 0.10</span>
-        <div class="metric-label">Profile Visit</div>
-        <div class="metric-context">
-          Approx. cost per result on top discovery campaigns
-        </div>
-      </div>
-
-      <div class="metric-card">
-        <span class="metric-number">14.9K+</span>
-        <div class="metric-label">Video ThruPlays</div>
-        <div class="metric-context">
-          Generated through paid video promotion
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      FEATURED CASE STUDIES
 ========================== -->
 
-<section class="section-light" id="case-studies">
+    <section class="section-light" id="case-studies">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow"> Featured Work </span>
 
-  <div class="container">
+          <h2>Featured Campaign Case Studies</h2>
 
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        Featured Work
-      </span>
-
-      <h2>
-        Featured Campaign Case Studies
-      </h2>
-
-      <p>
-        Three campaigns selected to demonstrate traffic acquisition,
-        audience discovery and social profile growth across different
-        business objectives.
-      </p>
-
-    </div>
-
-
-    <div class="case-grid">
-
-
-      <!-- CASE 01 -->
-
-      <article class="case-card">
-
-        <div class="brand">
-          Barkadahan Food Hub
+          <p>
+            Three campaigns selected to demonstrate traffic acquisition,
+            audience discovery and social profile growth across different
+            business objectives.
+          </p>
         </div>
 
-        <h3>
-          Menu Website Traffic Campaign
-        </h3>
+        <div class="case-grid">
+          <!-- CASE 01 -->
 
-        <p>
-          A traffic-focused campaign designed to drive users from Meta
-          platforms to the restaurant's online menu and website.
-        </p>
+          <article class="case-card">
+            <div class="brand">Barkadahan Food Hub</div>
 
-        <div class="case-main-result">
-          <strong>5,101</strong>
-          <span>Landing Page Views</span>
+            <h3>Menu Website Traffic Campaign</h3>
+
+            <p>
+              A traffic-focused campaign designed to drive users from Meta
+              platforms to the restaurant's online menu and website.
+            </p>
+
+            <div class="case-main-result">
+              <strong> 5,101 </strong>
+
+              <span> Landing Page Views </span>
+            </div>
+
+            <div class="case-stats">
+              <div class="case-stat">
+                <strong> AED 2,454.57 </strong>
+
+                <span> Ad Spend </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> AED 0.48 </strong>
+
+                <span> Cost / LPV </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 448,892 </strong>
+
+                <span> Impressions </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 198,463 </strong>
+
+                <span> Reach </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 2.06% </strong>
+
+                <span> Link CTR </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> AED 0.26 </strong>
+
+                <span> Link CPC </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE 02 -->
+
+          <article class="case-card">
+            <div class="brand">Barkadahan Food Hub</div>
+
+            <h3>New Audience Discovery</h3>
+
+            <p>
+              A discovery campaign focused on introducing the brand to new
+              audiences and generating cost-efficient social profile visits.
+            </p>
+
+            <div class="case-main-result">
+              <strong> 5,004 </strong>
+
+              <span> Profile Visits </span>
+            </div>
+
+            <div class="case-stats">
+              <div class="case-stat">
+                <strong> AED 486.43 </strong>
+
+                <span> Ad Spend </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> ~AED 0.10 </strong>
+
+                <span> Cost / Result </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 171,565 </strong>
+
+                <span> Impressions </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 88,082 </strong>
+
+                <span> Reach </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 2.10% </strong>
+
+                <span> Link CTR </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> AED 0.13 </strong>
+
+                <span> Link CPC </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE 03 -->
+
+          <article class="case-card">
+            <div class="brand">Casa Barkada Salon</div>
+
+            <h3>Profile & Audience Growth</h3>
+
+            <p>
+              A paid social growth campaign supporting a beauty brand's
+              Instagram presence and increasing profile discovery.
+            </p>
+
+            <div class="case-main-result">
+              <strong> 3,509 </strong>
+
+              <span> Profile Visits </span>
+            </div>
+
+            <div class="case-stats">
+              <div class="case-stat">
+                <strong> AED 348.71 </strong>
+
+                <span> Ad Spend </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> ~AED 0.10 </strong>
+
+                <span> Cost / Result </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 90K+ </strong>
+
+                <span> Impressions </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 49K+ </strong>
+
+                <span> Reach </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> 2.20% </strong>
+
+                <span> Link CTR </span>
+              </div>
+
+              <div class="case-stat">
+                <strong> AED 0.17 </strong>
+
+                <span> Link CPC </span>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="case-stats">
-
-          <div class="case-stat">
-            <strong>AED 2,454.57</strong>
-            <span>Ad Spend</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>AED 0.48</strong>
-            <span>Cost / LPV</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>448,892</strong>
-            <span>Impressions</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>198,463</strong>
-            <span>Reach</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>2.06%</strong>
-            <span>Link CTR</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>AED 0.26</strong>
-            <span>Link CPC</span>
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <!-- CASE 02 -->
-
-      <article class="case-card">
-
-        <div class="brand">
-          Barkadahan Food Hub
-        </div>
-
-        <h3>
-          New Audience Discovery
-        </h3>
-
-        <p>
-          A discovery campaign focused on introducing the brand to new
-          audiences and generating cost-efficient social profile visits.
-        </p>
-
-        <div class="case-main-result">
-          <strong>5,004</strong>
-          <span>Profile Visits</span>
-        </div>
-
-        <div class="case-stats">
-
-          <div class="case-stat">
-            <strong>AED 486.43</strong>
-            <span>Ad Spend</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>~AED 0.10</strong>
-            <span>Cost / Result</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>171,565</strong>
-            <span>Impressions</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>88,082</strong>
-            <span>Reach</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>2.10%</strong>
-            <span>Link CTR</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>AED 0.13</strong>
-            <span>Link CPC</span>
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <!-- CASE 03 -->
-
-      <article class="case-card">
-
-        <div class="brand">
-          Casa Barkada Salon
-        </div>
-
-        <h3>
-          Profile & Audience Growth
-        </h3>
-
-        <p>
-          A paid social growth campaign supporting a beauty brand's
-          Instagram presence and increasing profile discovery.
-        </p>
-
-        <div class="case-main-result">
-          <strong>3,509</strong>
-          <span>Profile Visits</span>
-        </div>
-
-        <div class="case-stats">
-
-          <div class="case-stat">
-            <strong>AED 348.71</strong>
-            <span>Ad Spend</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>~AED 0.10</strong>
-            <span>Cost / Result</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>90K+</strong>
-            <span>Impressions</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>49K+</strong>
-            <span>Reach</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>2.20%</strong>
-            <span>Link CTR</span>
-          </div>
-
-          <div class="case-stat">
-            <strong>AED 0.17</strong>
-            <span>Link CPC</span>
-          </div>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      TOP CAMPAIGNS TABLE
 ========================== -->
 
-<section id="campaigns">
+    <section id="campaigns">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow"> Campaign Performance </span>
 
-  <div class="container">
+          <h2>Selected Meta Ads Campaigns</h2>
 
-    <div class="section-heading">
+          <p>
+            A broader selection of paid campaigns demonstrating performance
+            across traffic, discovery, profile growth, engagement, video
+            promotion and retargeting.
+          </p>
+        </div>
 
-      <span class="eyebrow">
-        Campaign Performance
-      </span>
+        <div class="table-wrapper">
+          <table class="performance-table">
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Campaign</th>
+                <th>Objective</th>
+                <th>Primary Result</th>
+                <th>Spend</th>
+                <th>Link CTR</th>
+                <th>Link CPC</th>
+                <th>CPM</th>
+              </tr>
+            </thead>
 
-      <h2>
-        Selected Meta Ads Campaigns
-      </h2>
+            <tbody>
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
 
-      <p>
-        A broader selection of paid campaigns demonstrating performance
-        across traffic, discovery, profile growth, engagement, video
-        promotion and retargeting.
-      </p>
+                <td>Menu Website Traffic</td>
 
-    </div>
+                <td>
+                  <span class="objective-pill"> Traffic </span>
+                </td>
 
+                <td>
+                  <strong> 5,101 LPVs </strong>
+                </td>
 
-    <div class="table-wrapper">
+                <td>AED 2,454.57</td>
 
-      <table class="performance-table">
+                <td>2.06%</td>
 
-        <thead>
+                <td>AED 0.26</td>
 
-          <tr>
-            <th>Brand</th>
-            <th>Campaign</th>
-            <th>Objective</th>
-            <th>Primary Result</th>
-            <th>Spend</th>
-            <th>Link CTR</th>
-            <th>Link CPC</th>
-            <th>CPM</th>
-          </tr>
+                <td>AED 5.47</td>
+              </tr>
 
-        </thead>
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
 
+                <td>New People – Discovery</td>
 
-        <tbody>
+                <td>
+                  <span class="objective-pill"> Discovery </span>
+                </td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>Menu Website Traffic</td>
-            <td>
-              <span class="objective-pill">Traffic</span>
-            </td>
-            <td><strong>5,101 LPVs</strong></td>
-            <td>AED 2,454.57</td>
-            <td>2.06%</td>
-            <td>AED 0.26</td>
-            <td>AED 5.47</td>
-          </tr>
+                <td>
+                  <strong> 5,004 Profile Visits </strong>
+                </td>
 
+                <td>AED 486.43</td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>New People – Discovery</td>
-            <td>
-              <span class="objective-pill">Discovery</span>
-            </td>
-            <td><strong>5,004 Profile Visits</strong></td>
-            <td>AED 486.43</td>
-            <td>2.10%</td>
-            <td>AED 0.13</td>
-            <td>AED 2.84</td>
-          </tr>
+                <td>2.10%</td>
 
+                <td>AED 0.13</td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>IG Discovery – March</td>
-            <td>
-              <span class="objective-pill">Profile Growth</span>
-            </td>
-            <td><strong>4,421 Profile Visits</strong></td>
-            <td>AED 637.48</td>
-            <td>1.40%</td>
-            <td>AED 0.27</td>
-            <td>AED 3.82</td>
-          </tr>
+                <td>AED 2.84</td>
+              </tr>
 
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
 
-          <tr>
-            <td class="brand-small">Casa Barkada Salon</td>
-            <td>Profile & Followers – August</td>
-            <td>
-              <span class="objective-pill">Profile Growth</span>
-            </td>
-            <td><strong>3,509 Profile Visits</strong></td>
-            <td>AED 348.71</td>
-            <td>2.20%</td>
-            <td>AED 0.17</td>
-            <td>AED 3.80</td>
-          </tr>
+                <td>IG Discovery – March</td>
 
+                <td>
+                  <span class="objective-pill"> Profile Growth </span>
+                </td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>Profile Visit Discovery – August V2</td>
-            <td>
-              <span class="objective-pill">Discovery</span>
-            </td>
-            <td><strong>2,713 Profile Visits</strong></td>
-            <td>AED 365.85</td>
-            <td>2.24%</td>
-            <td>AED 0.24</td>
-            <td>AED 5.40</td>
-          </tr>
+                <td>
+                  <strong> 4,421 Profile Visits </strong>
+                </td>
 
+                <td>AED 637.48</td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>IG Discovery – April</td>
-            <td>
-              <span class="objective-pill">Discovery</span>
-            </td>
-            <td><strong>4,565 Profile Visits</strong></td>
-            <td>AED 1,126.20</td>
-            <td>1.61%</td>
-            <td>AED 0.32</td>
-            <td>AED 5.08</td>
-          </tr>
+                <td>1.40%</td>
 
+                <td>AED 0.27</td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>Influencer Video Promotion</td>
-            <td>
-              <span class="objective-pill">Video</span>
-            </td>
-            <td><strong>14,945 ThruPlays</strong></td>
-            <td>AED 450.00</td>
-            <td>1.19%</td>
-            <td>AED 0.80</td>
-            <td>AED 9.54</td>
-          </tr>
+                <td>AED 3.82</td>
+              </tr>
 
+              <tr>
+                <td class="brand-small">Casa Barkada Salon</td>
 
-          <tr>
-            <td class="brand-small">Casa Barkada Salon</td>
-            <td>Followers – August</td>
-            <td>
-              <span class="objective-pill">Profile Growth</span>
-            </td>
-            <td><strong>1,286 Profile Visits</strong></td>
-            <td>AED 182.99</td>
-            <td>2.38%</td>
-            <td>AED 0.24</td>
-            <td>AED 5.71</td>
-          </tr>
+                <td>Profile & Followers – August</td>
 
+                <td>
+                  <span class="objective-pill"> Profile Growth </span>
+                </td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>Grilled Content Promotion</td>
-            <td>
-              <span class="objective-pill">Engagement</span>
-            </td>
-            <td><strong>1,138 Engagements</strong></td>
-            <td>AED 69.84</td>
-            <td>0.27%</td>
-            <td>AED 1.07</td>
-            <td>AED 2.89</td>
-          </tr>
+                <td>
+                  <strong> 3,509 Profile Visits </strong>
+                </td>
 
+                <td>AED 348.71</td>
 
-          <tr>
-            <td class="brand-small">Barkadahan Food Hub</td>
-            <td>New Menu Retargeting</td>
-            <td>
-              <span class="objective-pill">Retargeting</span>
-            </td>
-            <td><strong>415 Profile Visits</strong></td>
-            <td>AED 71.17</td>
-            <td>2.06%</td>
-            <td>AED 0.29</td>
-            <td>AED 6.06</td>
-          </tr>
+                <td>2.20%</td>
 
-        </tbody>
+                <td>AED 0.17</td>
 
-      </table>
+                <td>AED 3.80</td>
+              </tr>
 
-    </div>
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
 
-  </div>
+                <td>Profile Visit Discovery – August V2</td>
 
-</section>
+                <td>
+                  <span class="objective-pill"> Discovery </span>
+                </td>
 
+                <td>
+                  <strong> 2,713 Profile Visits </strong>
+                </td>
 
-<!-- =========================
+                <td>AED 365.85</td>
+
+                <td>2.24%</td>
+
+                <td>AED 0.24</td>
+
+                <td>AED 5.40</td>
+              </tr>
+
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
+
+                <td>IG Discovery – April</td>
+
+                <td>
+                  <span class="objective-pill"> Discovery </span>
+                </td>
+
+                <td>
+                  <strong> 4,565 Profile Visits </strong>
+                </td>
+
+                <td>AED 1,126.20</td>
+
+                <td>1.61%</td>
+
+                <td>AED 0.32</td>
+
+                <td>AED 5.08</td>
+              </tr>
+
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
+
+                <td>Influencer Video Promotion</td>
+
+                <td>
+                  <span class="objective-pill"> Video </span>
+                </td>
+
+                <td>
+                  <strong> 14,945 ThruPlays </strong>
+                </td>
+
+                <td>AED 450.00</td>
+
+                <td>1.19%</td>
+
+                <td>AED 0.80</td>
+
+                <td>AED 9.54</td>
+              </tr>
+
+              <tr>
+                <td class="brand-small">Casa Barkada Salon</td>
+
+                <td>Followers – August</td>
+
+                <td>
+                  <span class="objective-pill"> Profile Growth </span>
+                </td>
+
+                <td>
+                  <strong> 1,286 Profile Visits </strong>
+                </td>
+
+                <td>AED 182.99</td>
+
+                <td>2.38%</td>
+
+                <td>AED 0.24</td>
+
+                <td>AED 5.71</td>
+              </tr>
+
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
+
+                <td>Grilled Content Promotion</td>
+
+                <td>
+                  <span class="objective-pill"> Engagement </span>
+                </td>
+
+                <td>
+                  <strong> 1,138 Engagements </strong>
+                </td>
+
+                <td>AED 69.84</td>
+
+                <td>0.27%</td>
+
+                <td>AED 1.07</td>
+
+                <td>AED 2.89</td>
+              </tr>
+
+              <tr>
+                <td class="brand-small">Barkadahan Food Hub</td>
+
+                <td>New Menu Retargeting</td>
+
+                <td>
+                  <span class="objective-pill"> Retargeting </span>
+                </td>
+
+                <td>
+                  <strong> 415 Profile Visits </strong>
+                </td>
+
+                <td>AED 71.17</td>
+
+                <td>2.06%</td>
+
+                <td>AED 0.29</td>
+
+                <td>AED 6.06</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
      CAPABILITIES
 ========================== -->
 
-<section class="section-light">
+    <section class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow"> Paid Media Capabilities </span>
 
-  <div class="container">
+          <h2>From campaign planning to performance analysis.</h2>
+        </div>
 
-    <div class="section-heading">
+        <div class="capability-grid">
+          <div class="capability">
+            <div class="capability-number">01</div>
 
-      <span class="eyebrow">
-        Paid Media Capabilities
-      </span>
+            <h3>Campaign Strategy</h3>
 
-      <h2>
-        From campaign planning to performance analysis.
-      </h2>
+            <p>
+              Selecting campaign objectives and aligning paid media activity
+              with business and marketing goals.
+            </p>
+          </div>
 
-    </div>
+          <div class="capability">
+            <div class="capability-number">02</div>
 
+            <h3>Audience Targeting</h3>
 
-    <div class="capability-grid">
+            <p>
+              Building geographic, demographic, interest-based and retargeting
+              audiences based on campaign intent.
+            </p>
+          </div>
 
-      <div class="capability">
-        <div class="capability-number">01</div>
-        <h3>Campaign Strategy</h3>
-        <p>
-          Selecting campaign objectives and aligning paid media activity
-          with business and marketing goals.
-        </p>
+          <div class="capability">
+            <div class="capability-number">03</div>
+
+            <h3>Creative Strategy</h3>
+
+            <p>
+              Developing and selecting photo, video and short-form creative
+              suited to campaign objectives and placements.
+            </p>
+          </div>
+
+          <div class="capability">
+            <div class="capability-number">04</div>
+
+            <h3>Campaign Optimization</h3>
+
+            <p>
+              Monitoring delivery, CTR, CPC, CPM, frequency and cost per result
+              to identify opportunities for improvement.
+            </p>
+          </div>
+
+          <div class="capability">
+            <div class="capability-number">05</div>
+
+            <h3>Retargeting</h3>
+
+            <p>
+              Using warm audience strategies to reconnect with people who have
+              previously interacted with brand content.
+            </p>
+          </div>
+
+          <div class="capability">
+            <div class="capability-number">06</div>
+
+            <h3>Performance Reporting</h3>
+
+            <p>
+              Translating campaign metrics into clear performance insights for
+              ongoing marketing decisions.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="capability">
-        <div class="capability-number">02</div>
-        <h3>Audience Targeting</h3>
-        <p>
-          Building geographic, demographic, interest-based and
-          retargeting audiences based on campaign intent.
-        </p>
-      </div>
-
-      <div class="capability">
-        <div class="capability-number">03</div>
-        <h3>Creative Strategy</h3>
-        <p>
-          Developing and selecting photo, video and short-form creative
-          suited to campaign objectives and placements.
-        </p>
-      </div>
-
-      <div class="capability">
-        <div class="capability-number">04</div>
-        <h3>Campaign Optimization</h3>
-        <p>
-          Monitoring delivery, CTR, CPC, CPM, frequency and cost per
-          result to identify opportunities for improvement.
-        </p>
-      </div>
-
-      <div class="capability">
-        <div class="capability-number">05</div>
-        <h3>Retargeting</h3>
-        <p>
-          Using warm audience strategies to reconnect with people who
-          have previously interacted with brand content.
-        </p>
-      </div>
-
-      <div class="capability">
-        <div class="capability-number">06</div>
-        <h3>Performance Reporting</h3>
-        <p>
-          Translating campaign metrics into clear performance insights
-          for ongoing marketing decisions.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      PROCESS
 ========================== -->
 
-<section>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow"> My Process </span>
 
-  <div class="container">
+          <h2>How I approach Meta advertising.</h2>
+        </div>
 
-    <div class="section-heading">
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
 
-      <span class="eyebrow">
-        My Process
-      </span>
+            <h3>Objective</h3>
 
-      <h2>
-        How I approach Meta advertising.
-      </h2>
+            <p>Define the business goal and primary campaign KPI.</p>
+          </div>
 
-    </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
 
+            <h3>Audience</h3>
 
-    <div class="process-grid">
+            <p>Build targeting around location, demographics and intent.</p>
+          </div>
 
-      <div class="process-step">
-        <div class="step-number">1</div>
-        <h3>Objective</h3>
-        <p>
-          Define the business goal and primary campaign KPI.
-        </p>
+          <div class="process-step">
+            <div class="step-number">3</div>
+
+            <h3>Creative</h3>
+
+            <p>
+              Match messaging and creative format to the campaign objective.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">4</div>
+
+            <h3>Optimize</h3>
+
+            <p>Monitor performance and adjust delivery based on key metrics.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">5</div>
+
+            <h3>Analyze</h3>
+
+            <p>
+              Review results and convert campaign data into actionable insights.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="process-step">
-        <div class="step-number">2</div>
-        <h3>Audience</h3>
-        <p>
-          Build targeting around location, demographics and intent.
-        </p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">3</div>
-        <h3>Creative</h3>
-        <p>
-          Match messaging and creative format to the campaign objective.
-        </p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">4</div>
-        <h3>Optimize</h3>
-        <p>
-          Monitor performance and adjust delivery based on key metrics.
-        </p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">5</div>
-        <h3>Analyze</h3>
-        <p>
-          Review results and convert campaign data into actionable insights.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      TOOLS
 ========================== -->
 
-<section class="section-light">
+    <section class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow"> Tools & Measurement </span>
 
-  <div class="container">
+          <h2>Platforms used across the campaign workflow.</h2>
+        </div>
 
-    <div class="section-heading">
+        <div class="tools">
+          <span class="tool"> Meta Ads Manager </span>
 
-      <span class="eyebrow">
-        Tools & Measurement
-      </span>
+          <span class="tool"> Meta Business Suite </span>
 
-      <h2>
-        Platforms used across the campaign workflow.
-      </h2>
+          <span class="tool"> Meta Pixel </span>
 
-    </div>
+          <span class="tool"> Google Analytics 4 </span>
 
+          <span class="tool"> Google Tag Manager </span>
 
-    <div class="tools">
+          <span class="tool"> Looker Studio </span>
+        </div>
+      </div>
+    </section>
 
-      <span class="tool">Meta Ads Manager</span>
-
-      <span class="tool">Meta Business Suite</span>
-
-      <span class="tool">Meta Pixel</span>
-
-      <span class="tool">Google Analytics 4</span>
-
-      <span class="tool">Google Tag Manager</span>
-
-      <span class="tool">Looker Studio</span>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      CTA
 ========================== -->
 
-<section class="cta">
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <span class="eyebrow"> Digital Marketing </span>
 
-  <div class="container">
+            <h2>Looking for performance-driven marketing?</h2>
 
-    <div class="cta-box">
+            <p>
+              Explore the rest of my digital marketing work or get in touch to
+              discuss social media, paid advertising and growth opportunities.
+            </p>
+          </div>
 
-      <div>
+          <div class="hero-actions">
+            <a href="index.html#projects" class="btn btn-primary">
+              View My Work
+            </a>
 
-        <span class="eyebrow">
-          Digital Marketing
-        </span>
-
-        <h2>
-          Looking for performance-driven marketing?
-        </h2>
-
-        <p>
-          Explore the rest of my digital marketing work or get in touch
-          to discuss social media, paid advertising and growth opportunities.
-        </p>
-
+            <a
+              href="index.html#contact"
+              class="btn btn-secondary"
+              style="color: white; border-color: white"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-
-      <div class="hero-actions">
-
-        <a href="index.html#projects"
-           class="btn btn-primary">
-          View My Work
-        </a>
-
-        <a href="index.html#contact"
-           class="btn btn-secondary"
-           style="color:white;border-color:white;">
-          Contact Me
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+    <!-- =========================
      FOOTER
 ========================== -->
 
-<footer>
+    <footer>
+      <div class="container footer-content">
+        <div>© 2026 Wai Yan Aung</div>
 
-  <div class="container footer-content">
-
-    <div>
-      © 2026 Wai Yan Aung
-    </div>
-
-    <div>
-      Digital Marketing Specialist · Dubai, UAE
-    </div>
-
-  </div>
-
-</footer>
-
-
-</body>
+        <div>Digital Marketing Specialist · Dubai, UAE</div>
+      </div>
+    </footer>
+  </body>
 </html>
