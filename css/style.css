@@ -2202,3 +2202,19 @@ footer p {
     font-size: 36px;
   }
 }
+.design-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.design-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
