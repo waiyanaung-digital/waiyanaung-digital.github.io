@@ -846,34 +846,92 @@
       </div>
     </section>
 
-    <!-- =========================
-     CONTACT
-========================= -->
+    <!-- =========================================================
+     INTERACTIVE CONTACT
+========================================================= -->
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
+    <section id="contact" class="contact contact-interactive">
+      <div class="contact-card" id="contactCard">
+        <div class="contact-glow"></div>
 
-      <p>
-        Email:
+        <div class="contact-card-content">
+          <p class="contact-eyebrow" id="contactEyebrow">LET'S CONNECT</p>
 
-        <a href="mailto:waiyan.digimark@gmail.com">
-          waiyan.digimark@gmail.com
-        </a>
-      </p>
+          <h2 id="contactTitle">
+            Have a project or<br />
+            opportunity in mind?
+          </h2>
 
-      <p>
-        LinkedIn:
+          <p class="contact-description" id="contactDescription">
+            I'm open to digital marketing opportunities, freelance projects and
+            collaborations across SEO, analytics, paid media and creative
+            content.
+          </p>
 
-        <a href="https://www.linkedin.com/in/waiyandigimark/" target="_blank">
-          View My LinkedIn Profile
-        </a>
-      </p>
+          <div class="contact-services">
+            <span>SEO</span>
+            <span>Analytics</span>
+            <span>Meta Ads</span>
+            <span>Creative</span>
+            <span>Videography</span>
+          </div>
 
-      <p>
-        Phone:
+          <!-- CONTACT LINKS -->
 
-        <a href="tel:+971508609552"> +971 56 951 6885 </a>
-      </p>
+          <div class="contact-actions" id="contactActions">
+            <a href="mailto:waiyan.digimark@gmail.com" class="contact-action">
+              <i class="fas fa-envelope"></i>
+
+              <span>Email</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/waiyandigimark/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-action"
+            >
+              <i class="fab fa-linkedin-in"></i>
+
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href="https://wa.me/971569516885"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-action"
+            >
+              <i class="fab fa-whatsapp"></i>
+
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- INTERACTIVE SLIDER -->
+
+          <div class="connect-slider-wrapper">
+            <div class="connect-slider-top">
+              <span id="sliderText"> Slide to connect </span>
+
+              <span id="sliderPercentage"> 0% </span>
+            </div>
+
+            <div class="connect-slider">
+              <div class="slider-progress" id="sliderProgress"></div>
+
+              <input
+                type="range"
+                id="connectRange"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="Slide to connect"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- =========================
@@ -883,5 +941,6 @@
     <footer>
       <p>© 2026 Wai Yan Aung | Digital Marketing Specialist</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

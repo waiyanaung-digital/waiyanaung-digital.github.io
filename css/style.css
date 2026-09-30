@@ -2202,3 +2202,567 @@ footer p {
     font-size: 36px;
   }
 }
+/* =========================================================
+   INTERACTIVE CONTACT
+========================================================= */
+
+.contact-interactive {
+  max-width: 1280px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.contact-card {
+  --contact-progress: 0;
+
+  position: relative;
+  overflow: hidden;
+
+  min-height: 590px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 75px;
+
+  border-radius: 34px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgb(
+        calc(255 - (250 * var(--contact-progress))),
+        calc(255 - (105 * var(--contact-progress))),
+        calc(255 - (150 * var(--contact-progress)))
+      ),
+      rgb(
+        calc(250 - (245 * var(--contact-progress))),
+        calc(253 - (103 * var(--contact-progress))),
+        calc(251 - (146 * var(--contact-progress)))
+      )
+    );
+
+  border: 1px solid rgba(5, 150, 105, 0.14);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.08);
+
+  transition:
+    background 0.15s linear,
+    box-shadow 0.35s ease;
+}
+
+
+/* Decorative glow */
+
+.contact-glow {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -140px;
+  top: -180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(5, 150, 105, 0.16),
+      rgba(5, 150, 105, 0) 68%
+    );
+
+  pointer-events: none;
+
+  transition: opacity 0.4s ease;
+}
+
+
+/* Content */
+
+.contact-card-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: left;
+}
+
+
+/* Eyebrow */
+
+.contact .contact-eyebrow {
+  margin: 0 0 18px;
+
+  color: #059669;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Heading */
+
+.contact-interactive h2 {
+  max-width: 850px;
+
+  margin: 0 0 25px;
+
+  text-align: left;
+
+  color: #111;
+
+  font-size: clamp(46px, 6vw, 72px);
+  line-height: 1.04;
+
+  letter-spacing: -3px;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Description */
+
+.contact .contact-description {
+  max-width: 760px;
+
+  margin: 0 0 30px;
+
+  color: #555;
+
+  font-size: 20px;
+  line-height: 1.75;
+
+  transition: color 0.3s ease;
+}
+
+
+/* =========================================================
+   SERVICE TAGS
+========================================================= */
+
+.contact-services {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 42px;
+}
+
+.contact-services span {
+  padding: 9px 15px;
+
+  border-radius: 999px;
+
+  background: #e7f8f1;
+
+  color: #059669;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   CONTACT BUTTONS
+========================================================= */
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 55px;
+}
+
+.contact a.contact-action {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-width: 145px;
+
+  padding: 14px 20px;
+
+  border: 1px solid #dedede;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  color: #222;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 7px 22px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact a.contact-action:hover {
+  transform: translateY(-4px);
+
+  background: #059669;
+
+  border-color: #059669;
+
+  color: white;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 12px 28px rgba(5, 150, 105, 0.2);
+}
+
+.contact-action i {
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.connect-slider-wrapper {
+  width: 100%;
+  max-width: 680px;
+}
+
+.connect-slider-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 13px;
+
+  color: #555;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Slider track */
+
+.connect-slider {
+  position: relative;
+
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 8px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  border: 1px solid rgba(5, 150, 105, 0.2);
+
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Green progress */
+
+.slider-progress {
+  position: absolute;
+
+  left: 7px;
+  top: 7px;
+  bottom: 7px;
+
+  width: 0;
+
+  border-radius: 999px;
+
+  background: #059669;
+
+  pointer-events: none;
+
+  transition: width 0.08s linear;
+}
+
+
+/* Range */
+
+#connectRange {
+  position: relative;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background: transparent;
+
+  cursor: grab;
+}
+
+#connectRange:active {
+  cursor: grabbing;
+}
+
+
+/* Chrome / Edge / Safari thumb */
+
+#connectRange::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 48px;
+  height: 48px;
+
+  border: 5px solid white;
+  border-radius: 50%;
+
+  background: #059669;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.18);
+
+  cursor: grab;
+
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease;
+}
+
+#connectRange::-webkit-slider-thumb:hover {
+  transform: scale(1.07);
+}
+
+
+/* Firefox thumb */
+
+#connectRange::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+
+  border: 5px solid white;
+  border-radius: 50%;
+
+  background: #059669;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.18);
+
+  cursor: grab;
+}
+
+
+/* =========================================================
+   COMPLETED STATE
+========================================================= */
+
+.contact-card.slider-complete {
+  box-shadow:
+    0 30px 80px rgba(5, 150, 105, 0.22);
+}
+
+.contact-card.slider-complete .contact-eyebrow,
+.contact-card.slider-complete h2 {
+  color: white;
+}
+
+.contact-card.slider-complete .contact-description {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.contact-card.slider-complete .contact-services span {
+  background: rgba(255, 255, 255, 0.15);
+
+  color: white;
+}
+
+.contact-card.slider-complete .connect-slider-top {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-card.slider-complete .contact-action {
+  background: white;
+
+  border-color: rgba(255, 255, 255, 0.4);
+
+  color: #047857;
+}
+
+.contact-card.slider-complete .contact-action:hover {
+  background: #111;
+
+  border-color: #111;
+
+  color: white;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .contact-card {
+    padding: 55px 45px;
+
+    min-height: 540px;
+  }
+
+  .contact-interactive h2 {
+    font-size: 55px;
+
+    letter-spacing: -2px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .contact-interactive {
+    padding: 75px 20px;
+  }
+
+  .contact-card {
+    min-height: auto;
+
+    padding: 45px 25px;
+
+    border-radius: 26px;
+  }
+
+  .contact-card-content {
+    text-align: left;
+  }
+
+  .contact .contact-eyebrow {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .contact-interactive h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+
+    text-align: left;
+  }
+
+  .contact .contact-description {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+  }
+
+  .contact-services {
+    margin-bottom: 32px;
+  }
+
+  .contact-services span {
+    font-size: 12px;
+
+    padding: 8px 12px;
+  }
+
+  .contact-actions {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 40px;
+  }
+
+  .contact a.contact-action {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    padding: 15px 18px;
+  }
+
+  .connect-slider {
+    height: 60px;
+  }
+
+  #connectRange::-webkit-slider-thumb {
+    width: 44px;
+    height: 44px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .contact-interactive {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-card {
+    padding: 38px 20px;
+  }
+
+  .contact-interactive h2 {
+    font-size: 36px;
+  }
+
+  .contact .contact-description {
+    font-size: 16px;
+  }
+
+}
