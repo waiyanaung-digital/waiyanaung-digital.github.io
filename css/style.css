@@ -1,14 +1,10 @@
 /* =========================================================
-
    RESET
-
-\========================================================= */
+========================================================= */
 
 * {
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
 }
 
@@ -18,11 +14,8 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-
   background: #efefef;
-
   color: #222;
-
   line-height: 1.7;
 }
 
@@ -31,18 +24,14 @@ a {
 }
 
 /* =========================================================
-
    NAVIGATION
-
-\========================================================= */
+========================================================= */
 
 header {
   background: #f7f7f7;
-
   border-bottom: 1px solid #ddd;
 
   position: sticky;
-
   top: 0;
 
   z-index: 1000;
@@ -56,15 +45,12 @@ nav {
   padding: 22px 40px;
 
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
 }
 
 nav h2 {
   font-size: 24px;
-
   font-weight: 700;
 
   letter-spacing: 0.5px;
@@ -84,7 +70,6 @@ nav ul li a {
   color: #111;
 
   font-size: 18px;
-
   font-weight: 500;
 
   transition: color 0.25s ease;
@@ -96,10 +81,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    HERO
-
-\========================================================= */
+========================================================= */
 
 .hero {
   max-width: 1200px;
@@ -113,7 +96,6 @@ nav ul li a.active {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 70px;
@@ -123,7 +105,6 @@ nav ul li a.active {
 
 .hero-image img {
   width: 330px;
-
   height: 330px;
 
   object-fit: cover;
@@ -172,10 +153,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    SPECIALTIES
-
-\========================================================= */
+========================================================= */
 
 .specialties {
   display: flex;
@@ -197,15 +176,12 @@ nav ul li a.active {
   border-radius: 999px;
 
   font-size: 15px;
-
   font-weight: 700;
 }
 
 /* =========================================================
-
    BUTTONS
-
-\========================================================= */
+========================================================= */
 
 .hero-buttons {
   display: flex;
@@ -231,7 +207,6 @@ nav ul li a.active {
   border-radius: 14px;
 
   font-size: 20px;
-
   font-weight: 700;
 
   transition:
@@ -259,7 +234,6 @@ nav ul li a.active {
   text-decoration: none;
 
   font-size: 18px;
-
   font-weight: 700;
 
   transition:
@@ -274,10 +248,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    SOCIAL ICONS
-
-\========================================================= */
+========================================================= */
 
 .social-icons {
   display: flex;
@@ -289,13 +261,11 @@ nav ul li a.active {
 
 .social-icons a {
   width: 55px;
-
   height: 55px;
 
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   background: white;
@@ -325,10 +295,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    COMMON SECTIONS
-
-\========================================================= */
+========================================================= */
 
 .about,
 .skills,
@@ -363,10 +331,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    ABOUT
-
-\========================================================= */
+========================================================= */
 
 .about p {
   text-align: center;
@@ -381,10 +347,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    SKILLS
-
-\========================================================= */
+========================================================= */
 
 .skills-grid {
   display: flex;
@@ -404,17 +368,14 @@ nav ul li a.active {
   border-radius: 999px;
 
   font-size: 22px;
-
   font-weight: 700;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* =========================================================
-
    LANGUAGES
-
-\========================================================= */
+========================================================= */
 
 .language-grid {
   display: grid;
@@ -451,10 +412,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    EXPERIENCE
-
-\========================================================= */
+========================================================= */
 
 .experience-card {
   background: #ffffff;
@@ -493,10 +452,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    PROJECTS
-
-\========================================================= */
+========================================================= */
 
 .project-card {
   background: white;
@@ -529,10 +486,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    PROJECT STATS
-
-\========================================================= */
+========================================================= */
 
 .project-stats {
   display: grid;
@@ -569,10 +524,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    PROJECT TAGS
-
-\========================================================= */
+========================================================= */
 
 .project-tags {
   margin-top: 25px;
@@ -592,7 +545,6 @@ nav ul li a.active {
   margin: 6px;
 
   font-size: 16px;
-
   font-weight: 600;
 }
 
@@ -605,10 +557,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    PROJECT HIGHLIGHT
-
-\========================================================= */
+========================================================= */
 
 .project-highlight {
   margin: 25px 0;
@@ -629,10 +579,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    SOCIAL MEDIA MANAGEMENT PROJECT
-
-\========================================================= */
+========================================================= */
 
 .social-media-project {
   padding: 40px;
@@ -640,7 +588,6 @@ nav ul li a.active {
 
 .project-category {
   font-size: 13px;
-
   font-weight: 700;
 
   letter-spacing: 2px;
@@ -710,7 +657,6 @@ nav ul li a.active {
   display: inline-block;
 
   font-size: 13px;
-
   font-weight: 600;
 
   opacity: 0.6;
@@ -785,10 +731,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    CERTIFICATIONS
-
-\========================================================= */
+========================================================= */
 
 .certification-grid {
   display: grid;
@@ -820,7 +764,6 @@ nav ul li a.active {
   color: #333;
 
   font-size: 20px;
-
   font-weight: 700;
 
   margin-bottom: 15px;
@@ -835,10 +778,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    CONTACT
-
-\========================================================= */
+========================================================= */
 
 .contact {
   text-align: center;
@@ -865,10 +806,8 @@ nav ul li a.active {
 }
 
 /* =========================================================
-
    FOOTER
-
-\========================================================= */
+========================================================= */
 
 footer {
   text-align: center;
@@ -893,16 +832,12 @@ footer p {
 }
 
 /* =========================================================
-
    CONTENT CREATION & VIDEOGRAPHY
-
-\========================================================= */
+========================================================= */
 
 /* =========================================================
-
    VIDEOGRAPHY LOGO
-
-\========================================================= */
+========================================================= */
 
 .video-logo {
   color: #111;
@@ -916,10 +851,8 @@ footer p {
 }
 
 /* =========================================================
-
    VIDEOGRAPHY HERO
-
-\========================================================= */
+========================================================= */
 
 .video-hero {
   max-width: 1200px;
@@ -937,7 +870,6 @@ footer p {
   color: #059669;
 
   font-size: 14px;
-
   font-weight: 800;
 
   letter-spacing: 2.5px;
@@ -991,7 +923,6 @@ footer p {
   border-radius: 999px;
 
   font-size: 15px;
-
   font-weight: 700;
 }
 
@@ -1006,10 +937,8 @@ footer p {
 }
 
 /* =========================================================
-
    VIDEOGRAPHY INTRODUCTION
-
-\========================================================= */
+========================================================= */
 
 .video-introduction {
   max-width: 1000px;
@@ -1036,10 +965,8 @@ footer p {
 }
 
 /* =========================================================
-
    VIDEOGRAPHY SECTION HEADINGS
-
-\========================================================= */
+========================================================= */
 
 .video-section-heading {
   max-width: 800px;
@@ -1068,10 +995,8 @@ footer p {
 }
 
 /* =========================================================
-
    SELECTED WORK
-
-\========================================================= */
+========================================================= */
 
 .video-work {
   max-width: 1200px;
@@ -1120,10 +1045,8 @@ footer p {
 }
 
 /* =========================================================
-
    REEL GRID
-
-\========================================================= */
+========================================================= */
 
 .reel-grid {
   display: grid;
@@ -1156,10 +1079,8 @@ footer p {
 }
 
 /* =========================================================
-
    REEL THUMBNAIL
-
-\========================================================= */
+========================================================= */
 
 .reel-thumbnail {
   display: block;
@@ -1177,7 +1098,6 @@ footer p {
 
 .reel-thumbnail img {
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
@@ -1202,22 +1122,18 @@ footer p {
 }
 
 /* =========================================================
-
    REEL PLAY BUTTON
-
-\========================================================= */
+========================================================= */
 
 .reel-play {
   position: absolute;
 
   top: 50%;
-
   left: 50%;
 
   transform: translate(-50%, -50%);
 
   width: 68px;
-
   height: 68px;
 
   border-radius: 50%;
@@ -1229,7 +1145,6 @@ footer p {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   font-size: 22px;
@@ -1257,10 +1172,8 @@ footer p {
 }
 
 /* =========================================================
-
    REEL CONTENT
-
-\========================================================= */
+========================================================= */
 
 .reel-content {
   padding: 27px;
@@ -1272,7 +1185,6 @@ footer p {
   color: #059669;
 
   font-size: 13px;
-
   font-weight: 800;
 
   letter-spacing: 2px;
@@ -1301,10 +1213,8 @@ footer p {
 }
 
 /* =========================================================
-
    REEL TAGS
-
-\========================================================= */
+========================================================= */
 
 .reel-tags {
   display: flex;
@@ -1326,15 +1236,12 @@ footer p {
   border-radius: 999px;
 
   font-size: 12px;
-
   font-weight: 700;
 }
 
 /* =========================================================
-
    WATCH REEL LINK
-
-\========================================================= */
+========================================================= */
 
 .watch-reel {
   display: inline-flex;
@@ -1346,7 +1253,6 @@ footer p {
   color: #059669;
 
   font-size: 15px;
-
   font-weight: 800;
 
   text-decoration: none;
@@ -1361,10 +1267,8 @@ footer p {
 }
 
 /* =========================================================
-
    APPROACH
-
-\========================================================= */
+========================================================= */
 
 .video-approach {
   max-width: 1200px;
@@ -1400,25 +1304,21 @@ footer p {
   position: absolute;
 
   top: 22px;
-
   right: 24px;
 
   color: #aaa;
 
   font-size: 13px;
-
   font-weight: 800;
 }
 
 .approach-card > i {
   width: 55px;
-
   height: 55px;
 
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   border-radius: 16px;
@@ -1449,10 +1349,8 @@ footer p {
 }
 
 /* =========================================================
-
    EQUIPMENT
-
-\========================================================= */
+========================================================= */
 
 .video-equipment {
   padding: 110px 40px;
@@ -1520,7 +1418,6 @@ footer p {
 
 .equipment-card > i {
   width: 48px;
-
   height: 48px;
 
   flex-shrink: 0;
@@ -1528,7 +1425,6 @@ footer p {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   background: #e7f8f1;
@@ -1555,10 +1451,8 @@ footer p {
 }
 
 /* =========================================================
-
    VIDEOGRAPHY CTA
-
-\========================================================= */
+========================================================= */
 
 .video-cta {
   max-width: 1000px;
@@ -1606,17 +1500,14 @@ footer p {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 9px;
 }
 
 /* =========================================================
-
    TABLET
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 992px) {
   .hero-content h1 {
@@ -1655,10 +1546,8 @@ footer p {
 }
 
 /* =========================================================
-
    SOCIAL MEDIA PROJECT TABLET
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 900px) {
   .brand-social-grid {
@@ -1667,10 +1556,8 @@ footer p {
 }
 
 /* =========================================================
-
    MOBILE
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 768px) {
   body {
@@ -1791,7 +1678,6 @@ footer p {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     width: auto;
@@ -1842,7 +1728,6 @@ footer p {
 
   .social-icons a {
     width: 56px;
-
     height: 56px;
 
     font-size: 23px;
@@ -2055,9 +1940,7 @@ footer p {
   }
 
   /* =====================================================
-
        VIDEOGRAPHY MOBILE
-
     ====================================================== */
 
   .video-hero {
@@ -2242,10 +2125,8 @@ footer p {
 }
 
 /* =========================================================
-
    SMALL MOBILE
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 420px) {
   nav ul {
@@ -2321,18 +2202,13 @@ footer p {
     font-size: 36px;
   }
 }
-
 /* =========================================================
-
    INTERACTIVE CONTACT
-
-\========================================================= */
+========================================================= */
 
 .contact-interactive {
   max-width: 1280px;
-
   padding-top: 110px;
-
   padding-bottom: 110px;
 }
 
@@ -2340,13 +2216,11 @@ footer p {
   --contact-progress: 0;
 
   position: relative;
-
   overflow: hidden;
 
   min-height: 590px;
 
   display: flex;
-
   align-items: center;
 
   padding: 75px;
@@ -2382,11 +2256,9 @@ footer p {
   position: absolute;
 
   width: 520px;
-
   height: 520px;
 
   right: -140px;
-
   top: -180px;
 
   border-radius: 50%;
@@ -2406,11 +2278,9 @@ footer p {
 
 .contact-card-content {
   position: relative;
-
   z-index: 2;
 
   width: 100%;
-
   max-width: 900px;
 
   text-align: left;
@@ -2424,7 +2294,6 @@ footer p {
   color: #059669;
 
   font-size: 14px;
-
   font-weight: 800;
 
   letter-spacing: 2.5px;
@@ -2446,7 +2315,6 @@ footer p {
   color: #111;
 
   font-size: clamp(46px, 6vw, 72px);
-
   line-height: 1.04;
 
   letter-spacing: -3px;
@@ -2464,21 +2332,17 @@ footer p {
   color: #555;
 
   font-size: 20px;
-
   line-height: 1.75;
 
   transition: color 0.3s ease;
 }
 
 /* =========================================================
-
    SERVICE TAGS
-
-\========================================================= */
+========================================================= */
 
 .contact-services {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 10px;
@@ -2496,7 +2360,6 @@ footer p {
   color: #059669;
 
   font-size: 13px;
-
   font-weight: 700;
 
   transition:
@@ -2506,14 +2369,11 @@ footer p {
 }
 
 /* =========================================================
-
    CONTACT BUTTONS
-
-\========================================================= */
+========================================================= */
 
 .contact-actions {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 12px;
@@ -2525,7 +2385,6 @@ footer p {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 10px;
@@ -2535,7 +2394,6 @@ footer p {
   padding: 14px 20px;
 
   border: 1px solid #dedede;
-
   border-radius: 14px;
 
   background: rgba(255, 255, 255, 0.88);
@@ -2543,7 +2401,6 @@ footer p {
   color: #222;
 
   font-size: 15px;
-
   font-weight: 700;
 
   text-decoration: none;
@@ -2577,14 +2434,11 @@ footer p {
 }
 
 /* =========================================================
-
    SLIDER
-
-\========================================================= */
+========================================================= */
 
 .connect-slider-wrapper {
   width: 100%;
-
   max-width: 680px;
 }
 
@@ -2592,7 +2446,6 @@ footer p {
   display: flex;
 
   justify-content: space-between;
-
   align-items: center;
 
   margin-bottom: 13px;
@@ -2600,7 +2453,6 @@ footer p {
   color: #555;
 
   font-size: 13px;
-
   font-weight: 700;
 
   transition: color 0.3s ease;
@@ -2614,7 +2466,6 @@ footer p {
   height: 64px;
 
   display: flex;
-
   align-items: center;
 
   padding: 0 8px;
@@ -2636,9 +2487,7 @@ footer p {
   position: absolute;
 
   left: 7px;
-
   top: 7px;
-
   bottom: 7px;
 
   width: 0;
@@ -2656,17 +2505,14 @@ footer p {
 
 #connectRange {
   position: relative;
-
   z-index: 3;
 
   width: 100%;
-
   height: 100%;
 
   margin: 0;
 
   appearance: none;
-
   -webkit-appearance: none;
 
   background: transparent;
@@ -2682,15 +2528,12 @@ footer p {
 
 #connectRange::-webkit-slider-thumb {
   appearance: none;
-
   -webkit-appearance: none;
 
   width: 48px;
-
   height: 48px;
 
   border: 5px solid white;
-
   border-radius: 50%;
 
   background: #059669;
@@ -2712,11 +2555,9 @@ footer p {
 
 #connectRange::-moz-range-thumb {
   width: 40px;
-
   height: 40px;
 
   border: 5px solid white;
-
   border-radius: 50%;
 
   background: #059669;
@@ -2727,10 +2568,8 @@ footer p {
 }
 
 /* =========================================================
-
    COMPLETED STATE
-
-\========================================================= */
+========================================================= */
 
 .contact-card.slider-complete {
   box-shadow: 0 30px 80px rgba(5, 150, 105, 0.22);
@@ -2772,10 +2611,8 @@ footer p {
 }
 
 /* =========================================================
-
    TABLET
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 900px) {
   .contact-card {
@@ -2792,10 +2629,8 @@ footer p {
 }
 
 /* =========================================================
-
    MOBILE
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 768px) {
   .contact-interactive {
@@ -2824,7 +2659,6 @@ footer p {
     margin-bottom: 20px;
 
     font-size: 42px;
-
     line-height: 1.08;
 
     letter-spacing: -1.5px;
@@ -2874,21 +2708,17 @@ footer p {
 
   #connectRange::-webkit-slider-thumb {
     width: 44px;
-
     height: 44px;
   }
 }
 
 /* =========================================================
-
    SMALL MOBILE
-
-\========================================================= */
+========================================================= */
 
 @media (max-width: 420px) {
   .contact-interactive {
     padding-left: 15px;
-
     padding-right: 15px;
   }
 
