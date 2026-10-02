@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,13 +13,56 @@
       content="Meta Ads portfolio of Wai Yan Aung, Digital Marketing Specialist in Dubai. Selected paid social campaigns across traffic, audience growth, engagement, video promotion and retargeting."
     />
 
+    <link
+      rel="canonical"
+      href="https://waiyanaung-digital.github.io/meta-ads.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Meta Ads Portfolio | Wai Yan Aung" />
+    <meta
+      property="og:description"
+      content="Selected Meta Ads case studies by Wai Yan Aung, a Dubai-based Digital Marketing Specialist, covering website traffic, audience growth, engagement, video promotion and retargeting."
+    />
+    <meta
+      property="og:url"
+      content="https://waiyanaung-digital.github.io/meta-ads.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://waiyanaung-digital.github.io/images/profile/wai-yan-aung-eric-in-emirates.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Wai Yan Aung - Digital Marketing Specialist in Dubai"
+    />
+
+    <!-- Page Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://waiyanaung-digital.github.io/meta-ads.html#webpage",
+        "url": "https://waiyanaung-digital.github.io/meta-ads.html",
+        "name": "Meta Ads Portfolio | Wai Yan Aung",
+        "description": "Selected Meta Ads case studies by Wai Yan Aung covering website traffic, audience growth, engagement, video promotion and retargeting.",
+        "about": {
+          "@id": "https://waiyanaung-digital.github.io/#wai-yan-aung"
+        }
+      }
+    </script>
+
     <!-- Favicon -->
+
     <link rel="icon" href="assets/favicon/favicon.ico" />
 
     <style>
-      * {
+      \* {
         margin: 0;
+
         padding: 0;
+
         box-sizing: border-box;
       }
 
@@ -28,41 +72,56 @@
 
       body {
         font-family: Arial, Helvetica, sans-serif;
+
         color: #111;
+
         background: #ffffff;
+
         line-height: 1.6;
       }
 
       :root {
         --green: #009b72;
+
         --green-dark: #007f5f;
+
         --green-light: #eaf8f3;
+
         --text: #111111;
+
         --muted: #666666;
+
         --border: #e5e5e5;
+
         --background: #f7f7f7;
+
         --white: #ffffff;
       }
 
       a {
         color: inherit;
+
         text-decoration: none;
       }
 
       .container {
         width: min(1180px, calc(100% - 40px));
+
         margin: 0 auto;
       }
 
-      /* =========================
-       NAVIGATION
-    ========================== */
-
-      header {
+      /\*
+        =========================
+        NAVIGATION
+        ==========================
+        \*/
+        header {
         background: rgba(255, 255, 255, 0.96);
+
         border-bottom: 1px solid var(--border);
 
         position: sticky;
+
         top: 0;
 
         z-index: 1000;
@@ -74,7 +133,9 @@
         min-height: 82px;
 
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
 
         gap: 30px;
@@ -82,6 +143,7 @@
 
       .logo {
         font-size: 22px;
+
         font-weight: 800;
 
         letter-spacing: 1px;
@@ -89,6 +151,7 @@
 
       .nav-links {
         display: flex;
+
         align-items: center;
 
         gap: 26px;
@@ -107,11 +170,7 @@
         color: var(--green);
       }
 
-      /* =========================
-       HERO
-    ========================== */
-
-      .hero {
+      /\* ========================= HERO ========================== \*/ .hero {
         padding: 110px 0 95px;
 
         background:
@@ -129,6 +188,7 @@
         color: var(--green);
 
         font-size: 14px;
+
         font-weight: 800;
 
         letter-spacing: 1.5px;
@@ -164,6 +224,7 @@
 
       .hero-tags {
         display: flex;
+
         flex-wrap: wrap;
 
         gap: 10px;
@@ -181,11 +242,13 @@
         border-radius: 30px;
 
         font-size: 14px;
+
         font-weight: 700;
       }
 
       .hero-actions {
         display: flex;
+
         flex-wrap: wrap;
 
         gap: 14px;
@@ -193,7 +256,9 @@
 
       .btn {
         display: inline-flex;
+
         align-items: center;
+
         justify-content: center;
 
         min-height: 50px;
@@ -233,11 +298,13 @@
         background: var(--green-light);
       }
 
-      /* =========================
-       GENERAL SECTION
-    ========================== */
-
-      section {
+      /\*
+        =========================
+        GENERAL
+        SECTION
+        ==========================
+        \*/
+        section {
         padding: 95px 0;
       }
 
@@ -267,11 +334,13 @@
         font-size: 17px;
       }
 
-      /* =========================
-       PERFORMANCE SNAPSHOT
-    ========================== */
-
-      .metrics-grid {
+      /\*
+        =========================
+        PERFORMANCE
+        SNAPSHOT
+        ==========================
+        \*/
+        .metrics-grid {
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
@@ -295,6 +364,7 @@
         color: var(--green);
 
         font-size: 38px;
+
         line-height: 1;
 
         font-weight: 800;
@@ -314,11 +384,14 @@
         font-size: 13px;
       }
 
-      /* =========================
-       FEATURED CASE STUDIES
-    ========================== */
-
-      .case-grid {
+      /\*
+        =========================
+        FEATURED
+        CASE
+        STUDIES
+        ==========================
+        \*/
+        .case-grid {
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
@@ -350,6 +423,7 @@
         color: var(--green);
 
         font-size: 13px;
+
         font-weight: 800;
 
         text-transform: uppercase;
@@ -429,11 +503,12 @@
         font-size: 12px;
       }
 
-      /* =========================
-       TABLE
-    ========================== */
-
-      .table-wrapper {
+      /\*
+        =========================
+        TABLE
+        ==========================
+        \*/
+        .table-wrapper {
         overflow-x: auto;
 
         border: 1px solid var(--border);
@@ -503,16 +578,18 @@
         color: var(--green-dark);
 
         font-size: 12px;
+
         font-weight: 700;
 
         white-space: nowrap;
       }
 
-      /* =========================
-       CAPABILITIES
-    ========================== */
-
-      .capability-grid {
+      /\*
+        =========================
+        CAPABILITIES
+        ==========================
+        \*/
+        .capability-grid {
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
@@ -534,6 +611,7 @@
         color: var(--green);
 
         font-size: 13px;
+
         font-weight: 800;
 
         margin-bottom: 15px;
@@ -551,11 +629,12 @@
         font-size: 14px;
       }
 
-      /* =========================
-       PROCESS
-    ========================== */
-
-      .process-grid {
+      /\*
+        =========================
+        PROCESS
+        ==========================
+        \*/
+        .process-grid {
         display: grid;
 
         grid-template-columns: repeat(5, 1fr);
@@ -575,10 +654,13 @@
 
       .step-number {
         width: 35px;
+
         height: 35px;
 
         display: flex;
+
         align-items: center;
+
         justify-content: center;
 
         background: var(--green);
@@ -588,6 +670,7 @@
         border-radius: 50%;
 
         font-size: 13px;
+
         font-weight: 800;
 
         margin-bottom: 17px;
@@ -605,12 +688,14 @@
         font-size: 13px;
       }
 
-      /* =========================
-       TOOLS
-    ========================== */
-
-      .tools {
+      /\*
+        =========================
+        TOOLS
+        ==========================
+        \*/
+        .tools {
         display: flex;
+
         flex-wrap: wrap;
 
         gap: 12px;
@@ -628,11 +713,7 @@
         background: white;
       }
 
-      /* =========================
-       CTA
-    ========================== */
-
-      .cta {
+      /\* ========================= CTA ========================== \*/ .cta {
         padding: 80px 0;
       }
 
@@ -646,7 +727,9 @@
         padding: 60px;
 
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
 
         gap: 40px;
@@ -666,11 +749,12 @@
         max-width: 620px;
       }
 
-      /* =========================
-       FOOTER
-    ========================== */
-
-      footer {
+      /\*
+        =========================
+        FOOTER
+        ==========================
+        \*/
+        footer {
         padding: 35px 0;
 
         border-top: 1px solid var(--border);
@@ -678,6 +762,7 @@
 
       .footer-content {
         display: flex;
+
         justify-content: space-between;
 
         gap: 30px;
@@ -687,11 +772,13 @@
         font-size: 14px;
       }
 
-      /* =========================
-       RESPONSIVE
-    ========================== */
-
-      @media (max-width: 1100px) {
+      /\*
+        =========================
+        RESPONSIVE
+        ==========================
+        \*/
+        @media
+        (max-width: 1100px) {
         .nav-links {
           gap: 17px;
         }
@@ -769,7 +856,9 @@
 
   <body>
     <!-- =========================
+
      NAVIGATION
+
 ========================== -->
 
     <header>
@@ -805,7 +894,9 @@
     </header>
 
     <!-- =========================
+
      HERO
+
 ========================== -->
 
     <section class="hero">
@@ -815,6 +906,7 @@
 
           <h1>
             Meta Ads &<br />
+
             <span>Paid Social.</span>
           </h1>
 
@@ -852,7 +944,9 @@
     </section>
 
     <!-- =========================
+
      PERFORMANCE SNAPSHOT
+
 ========================== -->
 
     <section>
@@ -913,7 +1007,9 @@
     </section>
 
     <!-- =========================
+
      FEATURED CASE STUDIES
+
 ========================== -->
 
     <section class="section-light" id="case-studies">
@@ -1106,7 +1202,9 @@
     </section>
 
     <!-- =========================
+
      TOP CAMPAIGNS TABLE
+
 ========================== -->
 
     <section id="campaigns">
@@ -1128,12 +1226,19 @@
             <thead>
               <tr>
                 <th>Brand</th>
+
                 <th>Campaign</th>
+
                 <th>Objective</th>
+
                 <th>Primary Result</th>
+
                 <th>Spend</th>
+
                 <th>Link CTR</th>
+
                 <th>Link CPC</th>
+
                 <th>CPM</th>
               </tr>
             </thead>
@@ -1365,7 +1470,9 @@
     </section>
 
     <!-- =========================
+
      CAPABILITIES
+
 ========================== -->
 
     <section class="section-light">
@@ -1447,7 +1554,9 @@
     </section>
 
     <!-- =========================
+
      PROCESS
+
 ========================== -->
 
     <section>
@@ -1507,7 +1616,9 @@
     </section>
 
     <!-- =========================
+
      TOOLS
+
 ========================== -->
 
     <section class="section-light">
@@ -1535,7 +1646,9 @@
     </section>
 
     <!-- =========================
+
      CTA
+
 ========================== -->
 
     <section class="cta">
@@ -1570,7 +1683,9 @@
     </section>
 
     <!-- =========================
+
      FOOTER
+
 ========================== -->
 
     <footer>
