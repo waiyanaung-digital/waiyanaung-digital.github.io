@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,23 +13,68 @@
       content="Creative portfolio of Wai Yan Aung featuring portrait, food, beauty, interior photography and graphic design work for businesses and social media."
     />
 
+    <link
+      rel="canonical"
+      href="https://waiyanaung-digital.github.io/creative-work.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Creative Work | Wai Yan Aung" />
+    <meta
+      property="og:description"
+      content="Creative portfolio of Wai Yan Aung featuring portrait, food, beauty, interior photography and graphic design work for businesses and social media."
+    />
+    <meta
+      property="og:url"
+      content="https://waiyanaung-digital.github.io/creative-work.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://waiyanaung-digital.github.io/images/profile/wai-yan-aung-eric-in-emirates.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Wai Yan Aung - Digital Marketing Specialist in Dubai"
+    />
+
+    <!-- Page Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://waiyanaung-digital.github.io/creative-work.html#webpage",
+        "url": "https://waiyanaung-digital.github.io/creative-work.html",
+        "name": "Creative Work | Wai Yan Aung",
+        "description": "Creative portfolio of Wai Yan Aung featuring portrait, food, beauty, interior photography and graphic design work for businesses and social media.",
+        "about": {
+          "@id": "https://waiyanaung-digital.github.io/#wai-yan-aung"
+        }
+      }
+    </script>
+
     <!-- Favicon -->
+
     <link rel="icon" href="assets/favicon/favicon.ico" />
 
     <!-- Font Awesome -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
     <style>
-      /* =========================================================
-       RESET
-    ========================================================= */
-
-      * {
+      /\*
+        =========================================================
+        RESET
+        =========================================================
+        \*/
+        \* {
         margin: 0;
+
         padding: 0;
+
         box-sizing: border-box;
       }
 
@@ -38,22 +84,31 @@
 
       body {
         font-family: Arial, Helvetica, sans-serif;
+
         color: #111;
+
         background: #fff;
+
         line-height: 1.6;
       }
 
       :root {
         --green: #009b72;
+
         --green-dark: #007f5f;
+
         --green-light: #eaf8f3;
+
         --light-bg: #f7f7f7;
+
         --border: #e4e4e4;
+
         --muted: #666;
       }
 
       a {
         color: inherit;
+
         text-decoration: none;
       }
 
@@ -63,19 +118,24 @@
 
       .container {
         width: min(1200px, calc(100% - 40px));
+
         margin: 0 auto;
       }
 
-      /* =========================================================
-       NAVIGATION
-    ========================================================= */
-
-      header {
+      /\*
+        =========================================================
+        NAVIGATION
+        =========================================================
+        \*/
+        header {
         position: sticky;
+
         top: 0;
+
         z-index: 1000;
 
         background: rgba(255, 255, 255, 0.96);
+
         border-bottom: 1px solid var(--border);
 
         backdrop-filter: blur(10px);
@@ -83,18 +143,23 @@
 
       nav {
         max-width: 1400px;
+
         min-height: 85px;
 
         margin: 0 auto;
+
         padding: 0 30px;
 
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
       }
 
       nav h2 {
         font-size: 23px;
+
         letter-spacing: 1px;
       }
 
@@ -106,6 +171,7 @@
         list-style: none;
 
         display: flex;
+
         align-items: center;
 
         gap: 30px;
@@ -124,11 +190,12 @@
         color: var(--green);
       }
 
-      /* =========================================================
-       HERO
-    ========================================================= */
-
-      .creative-hero {
+      /\*
+        =========================================================
+        HERO
+        =========================================================
+        \*/
+        .creative-hero {
         padding: 110px 0 95px;
 
         background:
@@ -146,9 +213,11 @@
         color: var(--green);
 
         font-size: 13px;
+
         font-weight: 800;
 
         letter-spacing: 1.5px;
+
         text-transform: uppercase;
 
         margin-bottom: 18px;
@@ -158,6 +227,7 @@
         font-size: clamp(50px, 7vw, 82px);
 
         line-height: 1.03;
+
         letter-spacing: -3px;
 
         margin-bottom: 25px;
@@ -173,6 +243,7 @@
         color: #555;
 
         font-size: 20px;
+
         line-height: 1.7;
 
         margin-bottom: 35px;
@@ -180,6 +251,7 @@
 
       .hero-tags {
         display: flex;
+
         flex-wrap: wrap;
 
         gap: 10px;
@@ -187,6 +259,7 @@
 
       .hero-tag {
         background: var(--green-light);
+
         color: var(--green-dark);
 
         padding: 10px 16px;
@@ -194,14 +267,17 @@
         border-radius: 30px;
 
         font-size: 13px;
+
         font-weight: 700;
       }
 
-      /* =========================================================
-       GENERAL SECTIONS
-    ========================================================= */
-
-      section {
+      /\*
+        =========================================================
+        GENERAL
+        SECTIONS
+        =========================================================
+        \*/
+        section {
         padding: 95px 0;
       }
 
@@ -211,6 +287,7 @@
 
       .section-heading {
         max-width: 760px;
+
         margin-bottom: 50px;
       }
 
@@ -218,6 +295,7 @@
         font-size: clamp(34px, 4vw, 48px);
 
         line-height: 1.15;
+
         letter-spacing: -1.5px;
 
         margin-bottom: 15px;
@@ -229,11 +307,13 @@
         font-size: 17px;
       }
 
-      /* =========================================================
-       CREATIVE GRID
-    ========================================================= */
-
-      .creative-grid {
+      /\*
+        =========================================================
+        CREATIVE
+        GRID
+        =========================================================
+        \*/
+        .creative-grid {
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
@@ -245,6 +325,7 @@
         background: #fff;
 
         border: 1px solid var(--border);
+
         border-radius: 18px;
 
         overflow: hidden;
@@ -260,12 +341,16 @@
         box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
       }
 
-      /* =========================================================
-       PHOTOGRAPHY IMAGE FRAME
-       4:5 + COVER
-    ========================================================= */
-
-      .creative-image {
+      /\*
+        =========================================================
+        PHOTOGRAPHY
+        IMAGE
+        FRAME
+        4:5
+        + COVER
+        =========================================================
+        \*/
+        .creative-image {
         position: relative;
 
         width: 100%;
@@ -281,9 +366,11 @@
 
       .creative-image img {
         width: 100%;
+
         height: 100%;
 
         object-fit: cover;
+
         object-position: center;
 
         transition: transform 0.35s ease;
@@ -297,36 +384,51 @@
         object-position: center center;
       }
 
-      /* =========================================================
-       GRAPHIC DESIGN IMAGE FRAME
-       KEEP ORIGINAL ARTWORK / NO CROPPING
-    ========================================================= */
-
-      .creative-image.design-image {
+      /\*
+        =========================================================
+        GRAPHIC
+        DESIGN
+        IMAGE
+        FRAME
+        KEEP
+        ORIGINAL
+        ARTWORK
+        /
+        NO
+        CROPPING
+        =========================================================
+        \*/
+        .creative-image.design-image {
         background: #eeeeee;
       }
 
       .creative-image.design-image img {
         width: 100%;
+
         height: 100%;
 
         object-fit: contain;
+
         object-position: center;
 
         background: #eeeeee;
       }
 
-      /* =========================================================
-       IMAGE OVERLAY
-    ========================================================= */
-
-      .image-overlay {
+      /\*
+        =========================================================
+        IMAGE
+        OVERLAY
+        =========================================================
+        \*/
+        .image-overlay {
         position: absolute;
 
         inset: 0;
 
         display: flex;
+
         align-items: center;
+
         justify-content: center;
 
         background: rgba(0, 0, 0, 0);
@@ -346,12 +448,15 @@
 
       .image-overlay i {
         width: 46px;
+
         height: 46px;
 
         border-radius: 50%;
 
         display: flex;
+
         align-items: center;
+
         justify-content: center;
 
         background: rgba(255, 255, 255, 0.95);
@@ -361,11 +466,13 @@
         font-size: 16px;
       }
 
-      /* =========================================================
-       CARD CONTENT
-    ========================================================= */
-
-      .creative-card-content {
+      /\*
+        =========================================================
+        CARD
+        CONTENT
+        =========================================================
+        \*/
+        .creative-card-content {
         padding: 22px;
       }
 
@@ -373,9 +480,11 @@
         color: var(--green);
 
         font-size: 11px;
+
         font-weight: 800;
 
         letter-spacing: 1px;
+
         text-transform: uppercase;
 
         margin-bottom: 8px;
@@ -393,14 +502,18 @@
         color: var(--muted);
 
         font-size: 14px;
+
         line-height: 1.65;
       }
 
-      /* =========================================================
-       FIVE-CARD LAYOUT
-    ========================================================= */
-
-      .five-card-grid .creative-card:nth-child(4) {
+      /\*
+        =========================================================
+        FIVE-CARD
+        LAYOUT
+        =========================================================
+        \*/
+        .five-card-grid
+        .creative-card:nth-child(4) {
         grid-column: 1 / 2;
       }
 
@@ -408,16 +521,18 @@
         grid-column: 2 / 3;
       }
 
-      /* =========================================================
-       CTA
-    ========================================================= */
-
-      .creative-cta {
+      /\*
+        =========================================================
+        CTA
+        =========================================================
+        \*/
+        .creative-cta {
         padding: 80px 0;
       }
 
       .creative-cta-box {
         background: #111;
+
         color: white;
 
         border-radius: 24px;
@@ -425,7 +540,9 @@
         padding: 60px;
 
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
 
         gap: 50px;
@@ -453,11 +570,13 @@
         white-space: nowrap;
 
         display: inline-flex;
+
         align-items: center;
 
         gap: 14px;
 
         background: var(--green);
+
         color: white;
 
         padding: 16px 24px;
@@ -477,11 +596,12 @@
         transform: translateY(-2px);
       }
 
-      /* =========================================================
-       LIGHTBOX
-    ========================================================= */
-
-      .lightbox {
+      /\*
+        =========================================================
+        LIGHTBOX
+        =========================================================
+        \*/
+        .lightbox {
         position: fixed;
 
         inset: 0;
@@ -493,6 +613,7 @@
         display: none;
 
         align-items: center;
+
         justify-content: center;
 
         padding: 30px;
@@ -504,9 +625,11 @@
 
       .lightbox img {
         max-width: 92vw;
+
         max-height: 88vh;
 
         width: auto;
+
         height: auto;
 
         object-fit: contain;
@@ -520,12 +643,15 @@
         position: absolute;
 
         top: 22px;
+
         right: 30px;
 
         width: 50px;
+
         height: 50px;
 
         border: none;
+
         border-radius: 50%;
 
         background: rgba(255, 255, 255, 0.12);
@@ -533,6 +659,7 @@
         color: white;
 
         font-size: 34px;
+
         line-height: 1;
 
         cursor: pointer;
@@ -542,11 +669,12 @@
         background: rgba(255, 255, 255, 0.22);
       }
 
-      /* =========================================================
-       FOOTER
-    ========================================================= */
-
-      footer {
+      /\*
+        =========================================================
+        FOOTER
+        =========================================================
+        \*/
+        footer {
         border-top: 1px solid var(--border);
 
         padding: 35px 20px;
@@ -558,11 +686,13 @@
         font-size: 14px;
       }
 
-      /* =========================================================
-       RESPONSIVE
-    ========================================================= */
-
-      @media (max-width: 1050px) {
+      /\*
+        =========================================================
+        RESPONSIVE
+        =========================================================
+        \*/
+        @media
+        (max-width: 1050px) {
         nav ul {
           gap: 18px;
         }
@@ -633,7 +763,9 @@
 
   <body>
     <!-- =========================================================
+
        HEADER
+
   ========================================================= -->
 
     <header>
@@ -671,7 +803,9 @@
     </header>
 
     <!-- =========================================================
+
        HERO
+
   ========================================================= -->
 
     <section class="creative-hero">
@@ -681,6 +815,7 @@
 
           <h1>
             Photography &<br />
+
             <span>Design Work.</span>
           </h1>
 
@@ -706,7 +841,9 @@
     </section>
 
     <!-- =========================================================
+
        PHOTOGRAPHY
+
   ========================================================= -->
 
     <section id="photography">
@@ -889,7 +1026,9 @@
     </section>
 
     <!-- =========================================================
+
        GRAPHIC DESIGN
+
   ========================================================= -->
 
     <section id="design" class="section-light">
@@ -907,7 +1046,9 @@
 
         <div class="creative-grid five-card-grid">
           <!-- =====================================================
+
              DESIGN 1 — SOCIAL MEDIA CREATIVE
+
         ====================================================== -->
 
           <article class="creative-card">
@@ -940,7 +1081,9 @@
           </article>
 
           <!-- =====================================================
+
              DESIGN 2 — PROMOTIONAL CAMPAIGN
+
         ====================================================== -->
 
           <article class="creative-card">
@@ -973,7 +1116,9 @@
           </article>
 
           <!-- =====================================================
+
              DESIGN 3 — MENU DESIGN
+
         ====================================================== -->
 
           <article class="creative-card">
@@ -1005,7 +1150,9 @@
           </article>
 
           <!-- =====================================================
+
              DESIGN 4 — VISUAL GUIDE DESIGN
+
         ====================================================== -->
 
           <article class="creative-card">
@@ -1037,7 +1184,9 @@
           </article>
 
           <!-- =====================================================
+
              DESIGN 5 — SERVICE MARKETING CREATIVE
+
         ====================================================== -->
 
           <article class="creative-card">
@@ -1074,7 +1223,9 @@
     </section>
 
     <!-- =========================================================
+
        CTA
+
   ========================================================= -->
 
     <section class="creative-cta">
@@ -1102,7 +1253,9 @@
     </section>
 
     <!-- =========================================================
+
        FOOTER
+
   ========================================================= -->
 
     <footer>
@@ -1110,7 +1263,9 @@
     </footer>
 
     <!-- =========================================================
+
        LIGHTBOX
+
   ========================================================= -->
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
@@ -1127,7 +1282,9 @@
     </div>
 
     <!-- =========================================================
+
        LIGHTBOX JAVASCRIPT
+
   ========================================================= -->
 
     <script>
