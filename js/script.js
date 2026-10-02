@@ -1,79 +1,144 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.getElementById("contactSlider");
+document.addEventListener("DOMContentLoaded", function () {
+  const range = document.getElementById("connectRange");
+  const progress = document.getElementById("sliderProgress");
+  const percentage = document.getElementById("sliderPercentage");
+  const sliderText = document.getElementById("sliderText");
+
   const contactCard = document.getElementById("contactCard");
-  const contactStatus = document.getElementById("contactStatus");
-  const contactMessage = document.getElementById("contactMessage");
-  const sliderValue = document.getElementById("sliderValue");
+  const eyebrow = document.getElementById("contactEyebrow");
+  const title = document.getElementById("contactTitle");
+  const description = document.getElementById("contactDescription");
 
-  if (!slider || !contactCard) return;
+  // Stop safely if the slider is not found.
+  if (!range) return;
 
-  function updateContactSlider() {
-    const value = Number(slider.value);
+  function updateSlider() {
+    const value = Number(range.value);
 
-    // Update percentage
-    if (sliderValue) {
-      sliderValue.textContent = `${value}%`;
+    // Update percentage.
+    if (percentage) {
+      percentage.textContent = value + "%";
     }
 
-    // Update slider progress
-    slider.style.setProperty("--slider-progress", `${value}%`);
+    // Update progress bar.
+    if (progress) {
+      progress.style.width = value + "%";
+    }
 
-    // Remove previous state classes
-    contactCard.classList.remove(
-      "slider-start",
-      "slider-middle",
-      "slider-ready",
-      "slider-complete",
-    );
+    // Remove previous state classes.
+    if (contactCard) {
+      contactCard.classList.remove(
+        "slider-start",
+        "slider-middle",
+        "slider-ready",
+        "slider-complete",
+      );
+    }
 
+    // 0%–34%
     if (value < 35) {
-      contactCard.classList.add("slider-start");
-
-      if (contactStatus) {
-        contactStatus.textContent = "LET'S CONNECT";
+      if (contactCard) {
+        contactCard.classList.add("slider-start");
       }
 
-      if (contactMessage) {
-        contactMessage.textContent =
-          "Slide to explore opportunities to work together.";
-      }
-    } else if (value < 80) {
-      contactCard.classList.add("slider-middle");
-
-      if (contactStatus) {
-        contactStatus.textContent = "AVAILABLE FOR OPPORTUNITIES";
+      if (sliderText) {
+        sliderText.textContent = "Slide to connect";
       }
 
-      if (contactMessage) {
-        contactMessage.textContent =
-          "Open to digital marketing, SEO, analytics and performance marketing opportunities.";
-      }
-    } else if (value < 100) {
-      contactCard.classList.add("slider-ready");
-
-      if (contactStatus) {
-        contactStatus.textContent = "LET'S WORK TOGETHER";
+      if (eyebrow) {
+        eyebrow.textContent = "LET'S CONNECT";
       }
 
-      if (contactMessage) {
-        contactMessage.textContent =
-          "Have a project or opportunity in mind? Let's connect.";
+      if (title) {
+        title.innerHTML = "Have a project or<br>opportunity in mind?";
       }
-    } else {
+
+      if (description) {
+        description.textContent =
+          "I'm open to digital marketing opportunities, freelance projects and collaborations across SEO, analytics, paid media and creative content.";
+      }
+
+      return;
+    }
+
+    // 35%–79%
+    if (value < 80) {
+      if (contactCard) {
+        contactCard.classList.add("slider-middle");
+      }
+
+      if (sliderText) {
+        sliderText.textContent = "Keep sliding";
+      }
+
+      if (eyebrow) {
+        eyebrow.textContent = "AVAILABLE FOR OPPORTUNITIES";
+      }
+
+      if (title) {
+        title.innerHTML = "Looking for a digital<br>marketing specialist?";
+      }
+
+      if (description) {
+        description.textContent =
+          "I'm available for opportunities across digital marketing, SEO, analytics, Meta Ads, social media and performance marketing.";
+      }
+
+      return;
+    }
+
+    // 80%–99%
+    if (value < 100) {
+      if (contactCard) {
+        contactCard.classList.add("slider-ready");
+      }
+
+      if (sliderText) {
+        sliderText.textContent = "Almost there";
+      }
+
+      if (eyebrow) {
+        eyebrow.textContent = "LET'S WORK TOGETHER";
+      }
+
+      if (title) {
+        title.innerHTML = "Ready to build something<br>that performs?";
+      }
+
+      if (description) {
+        description.textContent =
+          "Have a project, role or collaboration in mind? Connect with me through email, LinkedIn or WhatsApp.";
+      }
+
+      return;
+    }
+
+    // 100%
+    if (contactCard) {
       contactCard.classList.add("slider-complete");
+    }
 
-      if (contactStatus) {
-        contactStatus.textContent = "LET'S WORK TOGETHER";
-      }
+    if (sliderText) {
+      sliderText.textContent = "Ready to connect";
+    }
 
-      if (contactMessage) {
-        contactMessage.textContent =
-          "I'm ready to discuss your next digital marketing project or opportunity.";
-      }
+    if (eyebrow) {
+      eyebrow.textContent = "LET'S WORK TOGETHER";
+    }
+
+    if (title) {
+      title.innerHTML = "Let's create measurable<br>digital growth.";
+    }
+
+    if (description) {
+      description.textContent =
+        "I'm ready to discuss your next digital marketing project, collaboration or career opportunity.";
     }
   }
 
-  slider.addEventListener("input", updateContactSlider);
+  // Update while the slider moves.
+  range.addEventListener("input", updateSlider);
 
-  updateContactSlider();
+  // Set the correct initial state.
+  updateSlider();
 });
