@@ -1193,6 +1193,15 @@
             campaign planning.
           </span>
         </div>
+
+        <div class="certification-card">
+          <h3>SEO Essentials with Semrush</h3>
+          <p>Semrush Academy | 2026</p>
+          <span
+            >Certified in essential SEO concepts and practical search
+            optimization using Semrush.</span
+          >
+        </div>
       </div>
     </section>
 
@@ -1218,86 +1227,151 @@
       <div class="contact-card" id="contactCard">
         <div class="contact-glow"></div>
 
-        <div class="contact-card-content">
-          <p class="contact-eyebrow" id="contactEyebrow">LET'S CONNECT</p>
+        <div class="contact-layout">
+          <div class="contact-card-content">
+            <p class="contact-eyebrow" id="contactEyebrow">LET'S CONNECT</p>
 
-          <h2 id="contactTitle">
-            Have a project or<br />
+            <h2 id="contactTitle">
+              Have a project or<br />
 
-            opportunity in mind?
-          </h2>
+              opportunity in mind?
+            </h2>
 
-          <p class="contact-description" id="contactDescription">
-            I'm open to digital marketing opportunities, freelance projects and
-            collaborations across SEO, analytics, paid media and creative
-            content.
-          </p>
+            <p class="contact-description" id="contactDescription">
+              I'm open to digital marketing opportunities, freelance projects
+              and collaborations across SEO, analytics, paid media and creative
+              content.
+            </p>
 
-          <div class="contact-services">
-            <span>SEO</span>
+            <div class="contact-services">
+              <span>SEO</span>
 
-            <span>Analytics</span>
+              <span>Analytics</span>
 
-            <span>Meta Ads</span>
+              <span>Meta Ads</span>
 
-            <span>Creative</span>
+              <span>Creative</span>
 
-            <span>Videography</span>
-          </div>
-
-          <!-- CONTACT LINKS -->
-
-          <div class="contact-actions" id="contactActions">
-            <a href="mailto:waiyan.digimark@gmail.com" class="contact-action">
-              <i class="fas fa-envelope"></i>
-
-              <span>Email</span>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/waiyandigimark/"
-              rel="noopener noreferrer"
-              class="contact-action"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-
-              <span>LinkedIn</span>
-            </a>
-
-            <a
-              href="https://wa.me/971569516885"
-              rel="noopener noreferrer"
-              class="contact-action"
-              target="_blank"
-            >
-              <i class="fab fa-whatsapp"></i>
-
-              <span>WhatsApp</span>
-            </a>
-          </div>
-
-          <!-- INTERACTIVE SLIDER -->
-
-          <div class="connect-slider-wrapper">
-            <div class="connect-slider-top">
-              <span id="sliderText"> Slide to connect </span>
-
-              <span id="sliderPercentage"> 0% </span>
+              <span>Videography</span>
             </div>
 
-            <div class="connect-slider">
-              <div class="slider-progress" id="sliderProgress"></div>
+            <!-- CONTACT LINKS -->
 
+            <div class="contact-actions" id="contactActions">
+              <a href="mailto:waiyan.digimark@gmail.com" class="contact-action">
+                <i class="fas fa-envelope"></i>
+
+                <span>Email</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/waiyandigimark/"
+                rel="noopener noreferrer"
+                class="contact-action"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+
+                <span>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://wa.me/971569516885"
+                rel="noopener noreferrer"
+                class="contact-action"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+
+                <span>WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- INTERACTIVE SLIDER -->
+
+            <div class="connect-slider-wrapper">
+              <div class="connect-slider-top">
+                <span id="sliderText"> Slide to connect </span>
+
+                <span id="sliderPercentage"> 0% </span>
+              </div>
+
+              <div class="connect-slider">
+                <div class="slider-progress" id="sliderProgress"></div>
+
+                <input
+                  type="range"
+                  id="connectRange"
+                  min="0"
+                  max="100"
+                  value="0"
+                  aria-label="Slide to connect"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <p class="contact-form-eyebrow">SEND A MESSAGE</p>
+            <h3>Let's work together.</h3>
+            <p class="contact-form-intro">
+              Tell me a little about your project, role or collaboration.
+            </p>
+            <form
+              action="https://formspree.io/f/mqparnrl"
+              method="POST"
+              class="contact-form"
+            >
               <input
-                type="range"
-                id="connectRange"
-                min="0"
-                max="100"
-                value="0"
-                aria-label="Slide to connect"
+                type="hidden"
+                name="_subject"
+                value="New portfolio enquiry — waiyanaung.me"
               />
-            </div>
+              <div class="contact-form-row">
+                <div class="form-field">
+                  <label for="contactName">Name</label
+                  ><input
+                    id="contactName"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="contactEmail">Email</label
+                  ><input
+                    id="contactEmail"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="contactSubject">Subject</label
+                ><input
+                  id="contactSubject"
+                  type="text"
+                  name="subject"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="contactMessage">Message</label
+                ><textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="contact-submit">
+                Send Message
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
