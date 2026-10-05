@@ -136,4 +136,4 @@ The objective is to make the business easier to understand, discover and contact
 
 For me, the strongest local SEO setup connects **Google Search + Google Maps + Google Business Profile + the website + analytics** into one measurable customer journey.
 
-You can read my first article, [Local SEO for Restaurants in Dubai: What I Learned From a Real Project](/blog/local-seo-for-restaurants-dubai/), or view my [SEO case studies](/seo.html) for more project data.
+You can read my first article, [Local SEO for Restaurants in Dubai: What I Learned From a Real Project](/blog/local-seo-for-restaurants-dubai/), explore my [Local SEO services in Dubai](/local-seo-dubai/) for practical support with local search visibility, or view my [SEO case studies](/seo.html) for more project data.
