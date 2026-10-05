@@ -135,4 +135,4 @@ For restaurants, the most useful SEO strategy is one that makes it easier for a 
 
 That is the approach I now use when evaluating local search performance.
 
-You can also view my [SEO case studies](/seo.html) for more performance data and project details, or explore my [digital marketing portfolio](/) to see the broader work behind these projects.
+You can also view my [SEO case studies](/seo.html) for more performance data and project details, explore my [Local SEO services in Dubai](/local-seo-dubai/) if your business needs help improving local search visibility, or visit my [digital marketing portfolio](/) to see the broader work behind these projects.
