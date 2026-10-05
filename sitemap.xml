@@ -32,14 +32,79 @@
     <priority>0.8</priority>
   </url>
 
+<!-- Blog -->
 <url>
   <loc>https://waiyanaung.me/blog/</loc>
   <lastmod>2026-10-05</lastmod>
   <priority>0.8</priority>
 </url>
 
+<!-- Article 1 -->
 <url>
   <loc>https://waiyanaung.me/blog/local-seo-for-restaurants-dubai/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 2 -->
+<url>
+  <loc>https://waiyanaung.me/blog/google-business-profile-local-visibility/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 3 -->
+<url>
+  <loc>https://waiyanaung.me/blog/ga4-events-local-business-website/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 4 -->
+<url>
+  <loc>https://waiyanaung.me/blog/google-search-console-seo-opportunities/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 5 -->
+<url>
+  <loc>https://waiyanaung.me/blog/seo-vs-meta-ads-small-business/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 6 -->
+<url>
+  <loc>https://waiyanaung.me/blog/local-seo-salon-dubai/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 7 -->
+<url>
+  <loc>https://waiyanaung.me/blog/ga4-vs-google-search-console-seo-reporting/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 8 -->
+<url>
+  <loc>https://waiyanaung.me/blog/how-to-build-seo-case-study/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 9 -->
+<url>
+  <loc>https://waiyanaung.me/blog/local-seo-checklist-small-business-dubai/</loc>
+  <lastmod>2026-10-05</lastmod>
+  <priority>0.8</priority>
+</url>
+
+<!-- Article 10 -->
+<url>
+  <loc>https://waiyanaung.me/blog/building-seo-analytics-portfolio-website/</loc>
   <lastmod>2026-10-05</lastmod>
   <priority>0.8</priority>
 </url>
