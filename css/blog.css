@@ -1,4 +1,48 @@
 /* Blog-only styles. Load after css/style.css. */
+
+/* Blog navigation: keeps the header visible on blog/article pages */
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e9eeeb;
+  backdrop-filter: blur(10px);
+}
+body > header nav {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 72px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+body > header nav h2 {
+  margin: 0;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+body > header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body > header nav a {
+  text-decoration: none;
+}
+body > header nav ul a {
+  font-size: 0.9rem;
+  color: #53605a;
+}
+body > header nav ul a:hover,
+body > header nav ul a.active {
+  color: #059669;
+}
+
 .blog-shell {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
@@ -89,7 +133,7 @@
   margin: 0 auto;
 }
 .post-header {
-  padding: 90px 0 46px;
+  padding: 82px 0 46px;
 }
 .post-header h1 {
   max-width: 900px;
@@ -105,13 +149,13 @@
   color: #5f6b66;
 }
 .post-content {
-  padding: 20px 0 90px;
-  font-size: 1.08rem;
+  padding: 28px 0 90px;
+  font-size: 1.125rem;
   line-height: 1.85;
   color: #26332d;
 }
 .post-content p {
-  margin: 0 0 1.4em;
+  margin: 0 0 1.45em;
 }
 .post-content h2 {
   margin: 52px 0 16px;
@@ -153,12 +197,28 @@
   color: #66736d;
 }
 
+@media (max-width: 900px) {
+  body > header nav {
+    align-items: flex-start;
+    padding: 18px 0;
+    flex-direction: column;
+    gap: 14px;
+  }
+  body > header nav ul {
+    width: 100%;
+    gap: 18px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 760px) {
   .blog-grid {
     grid-template-columns: 1fr;
   }
   .blog-hero {
-    padding: 78px 0 50px;
+    padding: 72px 0 50px;
   }
   .blog-list {
     padding: 52px 0 76px;
@@ -167,7 +227,7 @@
     width: min(100% - 32px, 900px);
   }
   .post-header {
-    padding: 70px 0 34px;
+    padding: 58px 0 34px;
   }
   .post-header h1 {
     font-size: clamp(2.15rem, 10vw, 2.8rem);
@@ -177,9 +237,9 @@
     font-size: 1.02rem;
   }
   .post-content {
-    font-size: 1rem;
+    font-size: 1.04rem;
     line-height: 1.8;
-    padding-top: 12px;
+    padding-top: 18px;
   }
   .post-content h2 {
     font-size: 1.55rem;
