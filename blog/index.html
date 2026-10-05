@@ -1,0 +1,88 @@
+---
+layout: null
+title: Blog
+description: SEO, analytics, local search and digital marketing articles by Wai Yan Aung.
+permalink: /blog/
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SEO & Digital Marketing Blog | Wai Yan Aung</title>
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="author" content="Wai Yan Aung" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://waiyanaung.me/blog/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="SEO & Digital Marketing Blog | Wai Yan Aung"
+    />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:url" content="https://waiyanaung.me/blog/" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>
+          <a href="/" style="color: inherit; text-decoration: none"
+            >WAI YAN AUNG</a
+          >
+        </h2>
+        <ul>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/seo.html">SEO</a></li>
+          <li><a href="/meta-ads.html">Meta Ads</a></li>
+          <li><a href="/creative-work.html">Creative</a></li>
+          <li><a href="/videography.html">Videography</a></li>
+          <li><a href="/blog/" class="active">Blog</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="blog-hero">
+        <div class="blog-shell">
+          <span class="blog-eyebrow">SEO · Analytics · Digital Growth</span>
+          <h1>Notes from real digital marketing work.</h1>
+          <p>
+            Practical articles on SEO, local search, website analytics and
+            digital marketing — connecting strategy with real-world
+            implementation.
+          </p>
+        </div>
+      </section>
+      <section class="blog-list">
+        <div class="blog-shell">
+          {% if site.posts.size > 0 %}
+          <div class="blog-grid">
+            {% for post in site.posts %}
+            <a class="blog-card" href="{{ post.url | relative_url }}"
+              ><div class="blog-meta">
+                <span class="blog-category"
+                  >{{ post.category | default: "SEO" }}</span
+                ><span>{{ post.date | date: "%b %-d, %Y" }}</span>{% if
+                post.read_time %}<span>· {{ post.read_time }} min read</span>{%
+                endif %}
+              </div>
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.description }}</p>
+              <span class="blog-read">Read Article →</span></a
+            >{% endfor %}
+          </div>
+          {% else %}
+          <div class="blog-empty">The first article is being prepared.</div>
+          {% endif %}
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 Wai Yan Aung | Digital Marketing Specialist · Dubai, UAE.</p>
+    </footer>
+  </body>
+</html>

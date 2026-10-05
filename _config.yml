@@ -1,0 +1,10 @@
+title: Wai Yan Aung
+description: SEO, analytics and digital marketing insights by Wai Yan Aung, Digital Marketing Specialist in Dubai.
+url: "https://waiyanaung.me"
+baseurl: ""
+permalink: /blog/:title/
+timezone: Asia/Dubai
+markdown: kramdown
+author:
+  name: Wai Yan Aung
+  url: "https://waiyanaung.me/"
