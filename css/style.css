@@ -1,10 +1,14 @@
 /* =========================================================
+
    RESET
+
 ========================================================= */
 
 * {
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -14,8 +18,11 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+
   background: #efefef;
+
   color: #222;
+
   line-height: 1.7;
 }
 
@@ -24,14 +31,18 @@ a {
 }
 
 /* =========================================================
+
    NAVIGATION
+
 ========================================================= */
 
 header {
   background: #f7f7f7;
+
   border-bottom: 1px solid #ddd;
 
   position: sticky;
+
   top: 0;
 
   z-index: 1000;
@@ -45,12 +56,15 @@ nav {
   padding: 22px 40px;
 
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
 }
 
 nav h2 {
   font-size: 24px;
+
   font-weight: 700;
 
   letter-spacing: 0.5px;
@@ -70,6 +84,7 @@ nav ul li a {
   color: #111;
 
   font-size: 18px;
+
   font-weight: 500;
 
   transition: color 0.25s ease;
@@ -81,7 +96,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    HERO
+
 ========================================================= */
 
 .hero {
@@ -96,6 +113,7 @@ nav ul li a.active {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 70px;
@@ -105,6 +123,7 @@ nav ul li a.active {
 
 .hero-image img {
   width: 330px;
+
   height: 330px;
 
   object-fit: cover;
@@ -153,34 +172,33 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    SPECIALTIES
+
 ========================================================= */
 
 .specialties {
   display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 12px;
-
+  flex-wrap: nowrap;
+  gap: 10px;
   margin: 25px 0;
+  align-items: center;
 }
 
 .specialties span {
   background: #e7f8f1;
-
   color: #059669;
-
-  padding: 10px 18px;
-
+  padding: 10px 16px;
   border-radius: 999px;
-
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 /* =========================================================
+
    BUTTONS
+
 ========================================================= */
 
 .hero-buttons {
@@ -207,6 +225,7 @@ nav ul li a.active {
   border-radius: 14px;
 
   font-size: 20px;
+
   font-weight: 700;
 
   transition:
@@ -234,6 +253,7 @@ nav ul li a.active {
   text-decoration: none;
 
   font-size: 18px;
+
   font-weight: 700;
 
   transition:
@@ -248,7 +268,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    SOCIAL ICONS
+
 ========================================================= */
 
 .social-icons {
@@ -261,11 +283,13 @@ nav ul li a.active {
 
 .social-icons a {
   width: 55px;
+
   height: 55px;
 
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   background: white;
@@ -295,7 +319,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    COMMON SECTIONS
+
 ========================================================= */
 
 .about,
@@ -331,7 +357,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    ABOUT
+
 ========================================================= */
 
 .about p {
@@ -347,7 +375,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    SKILLS
+
 ========================================================= */
 
 .skills-grid {
@@ -368,13 +398,16 @@ nav ul li a.active {
   border-radius: 999px;
 
   font-size: 22px;
+
   font-weight: 700;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* =========================================================
+
    LANGUAGES
+
 ========================================================= */
 
 .language-grid {
@@ -412,7 +445,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    EXPERIENCE
+
 ========================================================= */
 
 .experience-card {
@@ -452,7 +487,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    PROJECTS
+
 ========================================================= */
 
 .project-card {
@@ -486,7 +523,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    PROJECT STATS
+
 ========================================================= */
 
 .project-stats {
@@ -524,7 +563,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    PROJECT TAGS
+
 ========================================================= */
 
 .project-tags {
@@ -545,6 +586,7 @@ nav ul li a.active {
   margin: 6px;
 
   font-size: 16px;
+
   font-weight: 600;
 }
 
@@ -557,7 +599,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    PROJECT HIGHLIGHT
+
 ========================================================= */
 
 .project-highlight {
@@ -579,7 +623,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    SOCIAL MEDIA MANAGEMENT PROJECT
+
 ========================================================= */
 
 .social-media-project {
@@ -588,6 +634,7 @@ nav ul li a.active {
 
 .project-category {
   font-size: 13px;
+
   font-weight: 700;
 
   letter-spacing: 2px;
@@ -657,6 +704,7 @@ nav ul li a.active {
   display: inline-block;
 
   font-size: 13px;
+
   font-weight: 600;
 
   opacity: 0.6;
@@ -731,7 +779,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    CERTIFICATIONS
+
 ========================================================= */
 
 .certification-grid {
@@ -764,6 +814,7 @@ nav ul li a.active {
   color: #333;
 
   font-size: 20px;
+
   font-weight: 700;
 
   margin-bottom: 15px;
@@ -778,7 +829,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    CONTACT
+
 ========================================================= */
 
 .contact {
@@ -806,7 +859,9 @@ nav ul li a.active {
 }
 
 /* =========================================================
+
    FOOTER
+
 ========================================================= */
 
 footer {
@@ -832,11 +887,15 @@ footer p {
 }
 
 /* =========================================================
+
    CONTENT CREATION & VIDEOGRAPHY
+
 ========================================================= */
 
 /* =========================================================
+
    VIDEOGRAPHY LOGO
+
 ========================================================= */
 
 .video-logo {
@@ -851,7 +910,9 @@ footer p {
 }
 
 /* =========================================================
+
    VIDEOGRAPHY HERO
+
 ========================================================= */
 
 .video-hero {
@@ -870,6 +931,7 @@ footer p {
   color: #059669;
 
   font-size: 14px;
+
   font-weight: 800;
 
   letter-spacing: 2.5px;
@@ -923,6 +985,7 @@ footer p {
   border-radius: 999px;
 
   font-size: 15px;
+
   font-weight: 700;
 }
 
@@ -937,7 +1000,9 @@ footer p {
 }
 
 /* =========================================================
+
    VIDEOGRAPHY INTRODUCTION
+
 ========================================================= */
 
 .video-introduction {
@@ -965,7 +1030,9 @@ footer p {
 }
 
 /* =========================================================
+
    VIDEOGRAPHY SECTION HEADINGS
+
 ========================================================= */
 
 .video-section-heading {
@@ -995,7 +1062,9 @@ footer p {
 }
 
 /* =========================================================
+
    SELECTED WORK
+
 ========================================================= */
 
 .video-work {
@@ -1045,7 +1114,9 @@ footer p {
 }
 
 /* =========================================================
+
    REEL GRID
+
 ========================================================= */
 
 .reel-grid {
@@ -1079,7 +1150,9 @@ footer p {
 }
 
 /* =========================================================
+
    REEL THUMBNAIL
+
 ========================================================= */
 
 .reel-thumbnail {
@@ -1098,6 +1171,7 @@ footer p {
 
 .reel-thumbnail img {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -1122,18 +1196,22 @@ footer p {
 }
 
 /* =========================================================
+
    REEL PLAY BUTTON
+
 ========================================================= */
 
 .reel-play {
   position: absolute;
 
   top: 50%;
+
   left: 50%;
 
   transform: translate(-50%, -50%);
 
   width: 68px;
+
   height: 68px;
 
   border-radius: 50%;
@@ -1145,6 +1223,7 @@ footer p {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   font-size: 22px;
@@ -1172,7 +1251,9 @@ footer p {
 }
 
 /* =========================================================
+
    REEL CONTENT
+
 ========================================================= */
 
 .reel-content {
@@ -1185,6 +1266,7 @@ footer p {
   color: #059669;
 
   font-size: 13px;
+
   font-weight: 800;
 
   letter-spacing: 2px;
@@ -1213,7 +1295,9 @@ footer p {
 }
 
 /* =========================================================
+
    REEL TAGS
+
 ========================================================= */
 
 .reel-tags {
@@ -1236,11 +1320,14 @@ footer p {
   border-radius: 999px;
 
   font-size: 12px;
+
   font-weight: 700;
 }
 
 /* =========================================================
+
    WATCH REEL LINK
+
 ========================================================= */
 
 .watch-reel {
@@ -1253,6 +1340,7 @@ footer p {
   color: #059669;
 
   font-size: 15px;
+
   font-weight: 800;
 
   text-decoration: none;
@@ -1267,7 +1355,9 @@ footer p {
 }
 
 /* =========================================================
+
    APPROACH
+
 ========================================================= */
 
 .video-approach {
@@ -1304,21 +1394,25 @@ footer p {
   position: absolute;
 
   top: 22px;
+
   right: 24px;
 
   color: #aaa;
 
   font-size: 13px;
+
   font-weight: 800;
 }
 
 .approach-card > i {
   width: 55px;
+
   height: 55px;
 
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   border-radius: 16px;
@@ -1349,7 +1443,9 @@ footer p {
 }
 
 /* =========================================================
+
    EQUIPMENT
+
 ========================================================= */
 
 .video-equipment {
@@ -1418,6 +1514,7 @@ footer p {
 
 .equipment-card > i {
   width: 48px;
+
   height: 48px;
 
   flex-shrink: 0;
@@ -1425,6 +1522,7 @@ footer p {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   background: #e7f8f1;
@@ -1451,7 +1549,9 @@ footer p {
 }
 
 /* =========================================================
+
    VIDEOGRAPHY CTA
+
 ========================================================= */
 
 .video-cta {
@@ -1500,13 +1600,16 @@ footer p {
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 9px;
 }
 
 /* =========================================================
+
    TABLET
+
 ========================================================= */
 
 @media (max-width: 992px) {
@@ -1546,7 +1649,9 @@ footer p {
 }
 
 /* =========================================================
+
    SOCIAL MEDIA PROJECT TABLET
+
 ========================================================= */
 
 @media (max-width: 900px) {
@@ -1556,7 +1661,9 @@ footer p {
 }
 
 /* =========================================================
+
    MOBILE
+
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -1678,6 +1785,7 @@ footer p {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     width: auto;
@@ -1728,6 +1836,7 @@ footer p {
 
   .social-icons a {
     width: 56px;
+
     height: 56px;
 
     font-size: 23px;
@@ -1940,7 +2049,9 @@ footer p {
   }
 
   /* =====================================================
+
        VIDEOGRAPHY MOBILE
+
     ====================================================== */
 
   .video-hero {
@@ -2125,7 +2236,9 @@ footer p {
 }
 
 /* =========================================================
+
    SMALL MOBILE
+
 ========================================================= */
 
 @media (max-width: 420px) {
@@ -2202,13 +2315,18 @@ footer p {
     font-size: 36px;
   }
 }
+
 /* =========================================================
+
    INTERACTIVE CONTACT
+
 ========================================================= */
 
 .contact-interactive {
   max-width: 1280px;
+
   padding-top: 110px;
+
   padding-bottom: 110px;
 }
 
@@ -2216,11 +2334,13 @@ footer p {
   --contact-progress: 0;
 
   position: relative;
+
   overflow: hidden;
 
   min-height: 590px;
 
   display: flex;
+
   align-items: center;
 
   padding: 75px;
@@ -2256,9 +2376,11 @@ footer p {
   position: absolute;
 
   width: 520px;
+
   height: 520px;
 
   right: -140px;
+
   top: -180px;
 
   border-radius: 50%;
@@ -2278,9 +2400,11 @@ footer p {
 
 .contact-card-content {
   position: relative;
+
   z-index: 2;
 
   width: 100%;
+
   max-width: 900px;
 
   text-align: left;
@@ -2294,6 +2418,7 @@ footer p {
   color: #059669;
 
   font-size: 14px;
+
   font-weight: 800;
 
   letter-spacing: 2.5px;
@@ -2315,6 +2440,7 @@ footer p {
   color: #111;
 
   font-size: clamp(46px, 6vw, 72px);
+
   line-height: 1.04;
 
   letter-spacing: -3px;
@@ -2332,17 +2458,21 @@ footer p {
   color: #555;
 
   font-size: 20px;
+
   line-height: 1.75;
 
   transition: color 0.3s ease;
 }
 
 /* =========================================================
+
    SERVICE TAGS
+
 ========================================================= */
 
 .contact-services {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 10px;
@@ -2360,6 +2490,7 @@ footer p {
   color: #059669;
 
   font-size: 13px;
+
   font-weight: 700;
 
   transition:
@@ -2369,11 +2500,14 @@ footer p {
 }
 
 /* =========================================================
+
    CONTACT BUTTONS
+
 ========================================================= */
 
 .contact-actions {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 12px;
@@ -2385,6 +2519,7 @@ footer p {
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 10px;
@@ -2394,6 +2529,7 @@ footer p {
   padding: 14px 20px;
 
   border: 1px solid #dedede;
+
   border-radius: 14px;
 
   background: rgba(255, 255, 255, 0.88);
@@ -2401,6 +2537,7 @@ footer p {
   color: #222;
 
   font-size: 15px;
+
   font-weight: 700;
 
   text-decoration: none;
@@ -2434,11 +2571,14 @@ footer p {
 }
 
 /* =========================================================
+
    SLIDER
+
 ========================================================= */
 
 .connect-slider-wrapper {
   width: 100%;
+
   max-width: 680px;
 }
 
@@ -2446,6 +2586,7 @@ footer p {
   display: flex;
 
   justify-content: space-between;
+
   align-items: center;
 
   margin-bottom: 13px;
@@ -2453,6 +2594,7 @@ footer p {
   color: #555;
 
   font-size: 13px;
+
   font-weight: 700;
 
   transition: color 0.3s ease;
@@ -2466,6 +2608,7 @@ footer p {
   height: 64px;
 
   display: flex;
+
   align-items: center;
 
   padding: 0 8px;
@@ -2487,7 +2630,9 @@ footer p {
   position: absolute;
 
   left: 7px;
+
   top: 7px;
+
   bottom: 7px;
 
   width: 0;
@@ -2505,14 +2650,17 @@ footer p {
 
 #connectRange {
   position: relative;
+
   z-index: 3;
 
   width: 100%;
+
   height: 100%;
 
   margin: 0;
 
   appearance: none;
+
   -webkit-appearance: none;
 
   background: transparent;
@@ -2528,12 +2676,15 @@ footer p {
 
 #connectRange::-webkit-slider-thumb {
   appearance: none;
+
   -webkit-appearance: none;
 
   width: 48px;
+
   height: 48px;
 
   border: 5px solid white;
+
   border-radius: 50%;
 
   background: #059669;
@@ -2555,9 +2706,11 @@ footer p {
 
 #connectRange::-moz-range-thumb {
   width: 40px;
+
   height: 40px;
 
   border: 5px solid white;
+
   border-radius: 50%;
 
   background: #059669;
@@ -2568,7 +2721,9 @@ footer p {
 }
 
 /* =========================================================
+
    COMPLETED STATE
+
 ========================================================= */
 
 .contact-card.slider-complete {
@@ -2611,7 +2766,9 @@ footer p {
 }
 
 /* =========================================================
+
    TABLET
+
 ========================================================= */
 
 @media (max-width: 900px) {
@@ -2629,7 +2786,9 @@ footer p {
 }
 
 /* =========================================================
+
    MOBILE
+
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -2659,6 +2818,7 @@ footer p {
     margin-bottom: 20px;
 
     font-size: 42px;
+
     line-height: 1.08;
 
     letter-spacing: -1.5px;
@@ -2708,17 +2868,21 @@ footer p {
 
   #connectRange::-webkit-slider-thumb {
     width: 44px;
+
     height: 44px;
   }
 }
 
 /* =========================================================
+
    SMALL MOBILE
+
 ========================================================= */
 
 @media (max-width: 420px) {
   .contact-interactive {
     padding-left: 15px;
+
     padding-right: 15px;
   }
 
@@ -2736,136 +2900,215 @@ footer p {
 }
 
 /* CONTACT FORM — TWO-COLUMN LAYOUT */
+
 .contact-layout {
   position: relative;
+
   z-index: 2;
+
   width: 100%;
+
   display: grid;
+
   grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+
   gap: 55px;
+
   align-items: center;
 }
+
 .contact-layout .contact-card-content {
   max-width: none;
 }
+
 .contact-form-panel {
   padding: 34px;
+
   border: 1px solid rgba(5, 150, 105, 0.14);
+
   border-radius: 24px;
+
   background: rgba(255, 255, 255, 0.88);
+
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+
   text-align: left;
 }
+
 .contact-form-eyebrow {
   margin: 0 0 8px !important;
+
   color: #059669;
+
   font-size: 12px !important;
+
   font-weight: 800;
+
   letter-spacing: 2px;
 }
+
 .contact-form-panel h3 {
   margin: 0 0 8px;
+
   color: #111;
+
   font-size: 30px;
+
   line-height: 1.2;
 }
+
 .contact .contact-form-intro {
   margin: 0 0 24px;
+
   color: #666;
+
   font-size: 15px;
+
   line-height: 1.6;
 }
+
 .contact-form {
   display: grid;
+
   gap: 17px;
 }
+
 .contact-form-row {
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
+
   gap: 14px;
 }
+
 .form-field {
   display: grid;
+
   gap: 7px;
 }
+
 .form-field label {
   color: #333;
+
   font-size: 13px;
+
   font-weight: 700;
 }
+
 .form-field input,
 .form-field textarea {
   width: 100%;
+
   border: 1px solid #dedede;
+
   border-radius: 12px;
+
   background: rgba(255, 255, 255, 0.96);
+
   color: #222;
+
   font: inherit;
+
   font-size: 15px;
+
   outline: none;
+
   padding: 13px 14px;
+
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
+
 .form-field textarea {
   min-height: 135px;
+
   resize: vertical;
 }
+
 .form-field input:focus,
 .form-field textarea:focus {
   border-color: #059669;
+
   box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
 }
+
 .contact-submit {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 9px;
+
   width: 100%;
+
   border: 0;
+
   border-radius: 12px;
+
   padding: 14px 20px;
+
   background: #059669;
+
   color: #fff;
+
   font: inherit;
+
   font-size: 15px;
+
   font-weight: 800;
+
   cursor: pointer;
+
   transition:
     transform 0.2s ease,
     background 0.2s ease,
     box-shadow 0.2s ease;
 }
+
 .contact-submit:hover {
   transform: translateY(-2px);
+
   background: #047857;
+
   box-shadow: 0 10px 24px rgba(5, 150, 105, 0.2);
 }
+
 .contact-card.slider-complete .contact-form-panel {
   border-color: rgba(255, 255, 255, 0.3);
+
   background: rgba(255, 255, 255, 0.96);
 }
+
 @media (max-width: 1000px) {
   .contact-layout {
     grid-template-columns: 1fr;
+
     gap: 45px;
   }
+
   .contact-form-panel {
     max-width: 680px;
   }
 }
+
 @media (max-width: 768px) {
   .contact-layout {
     gap: 38px;
   }
+
   .contact-form-panel {
     padding: 26px 22px;
+
     border-radius: 20px;
   }
+
   .contact-form-row {
     grid-template-columns: 1fr;
   }
+
   .contact-form-panel h3 {
     font-size: 26px;
   }
